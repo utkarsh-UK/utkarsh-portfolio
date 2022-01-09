@@ -1,0 +1,19 @@
+.portfolio-skills__container {
+  width: 70vw;
+  box-sizing: border-box;
+  margin: 3rem auto;
+  padding: 2rem 4rem;
+
+  border-left: 1px solid var(--color-skill-border);
+  border-right: 1px solid var(--color-skill-border);
+}
+
+/* ********************************** Media Queries ********************************** */
+
+@media screen and (max-width: 768px) {
+  .portfolio-skills__container {
+    width: 90vw;
+    margin: 3rem auto;
+    padding: 2rem 2rem;
+  }
+}

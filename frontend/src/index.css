@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Rowdies:wght@400;700&family=Sail&display=swap");
+
+:root {
+  --color-primary: #219ebc;
+  --color-secondary: #023047;
+  --color-secondary-light: #8ecae6;
+  --color-title-text: #7400b8;
+  --color-secondary-text: #ffe5d9;
+  --color-project-stack-text: #7d8597;
+  --color-experience-company: #2b2d42;
+  --color-experience-role: #4a4a4a;
+  --color-contact-background: #ff90b3;
+  --color-button-border: #8ecae6;
+  --color-skill-background: #ffe300;
+  --color-skill-border: #cccccc;
+
+  --gradient-background-1: linear-gradient(115deg, #ebf4f5 27%, #b5c6e0 100%);
+  --gradient-background-2: linear-gradient(90deg, #f6d5f7 2%, #fbe9d7 57%);
+
+  --font-primary: "Heebo", sans-serif;
+  --font-secondary: "Rowdies", cursive;
+  --font-heading: "Sail", cursive;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: var(--font-primary);
+}
+
+::-moz-selection {
+  color: #000;
+  background: var(--color-button-border);
+}
+
+::selection {
+  color: #000;
+  background: var(--color-button-border);
+}

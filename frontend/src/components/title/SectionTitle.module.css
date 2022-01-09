@@ -1,0 +1,121 @@
+.portfolio-experience__section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-experience__section-title {
+  margin-left: 5rem;
+  margin-bottom: 2.5rem;
+  width: 40%;
+  position: relative;
+}
+
+.portfolio-experience__section-title h2 {
+  margin: 0;
+
+  font-family: var(--font-secondary);
+  font-size: 3rem;
+  color: var(--color-title-text);
+}
+
+.portfolio-experience__section-title h5 {
+  margin: 0;
+  margin-top: 1rem;
+
+  font-family: var(--font-secondary);
+  font-size: 1.5rem;
+  color: var(--color-title-text);
+}
+
+.portfolio-experience__section-display-title {
+  position: absolute;
+  left: -35px;
+  top: 40%;
+
+  z-index: -1;
+}
+
+.portfolio-experience__section-display-title h1 {
+  margin: 0;
+
+  font-family: var(--font-secondary);
+  color: var(--color-secondary-text);
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  letter-spacing: 8px;
+}
+
+.portfolio-experience__section-description {
+  flex: 0.7;
+}
+
+.portfolio-experience__section-description p {
+  text-align: right;
+  margin-right: 2rem;
+
+  font-weight: 500;
+}
+
+.portfolio-experience__section-description button {
+  margin-left: auto;
+
+  border: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: var(--font-primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  cursor: pointer;
+}
+
+.portfolio-experience__section-description button svg {
+  margin-left: 2rem;
+}
+
+/* ********************************** Media Queries ********************************** */
+
+@media screen and (max-width: 768px) {
+  .portfolio-experience__section-title {
+    margin-left: 2rem;
+    width: 80%;
+  }
+
+  .portfolio-experience__section-title h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio-experience__section-title h5 {
+    font-size: 1.3rem;
+  }
+
+  .portfolio-experience__section-display-title h1 {
+    font-size: 2rem;
+  }
+
+  .portfolio-experience__section-display-title {
+    position: absolute;
+    left: -20px;
+    top: 60%;
+
+    z-index: -1;
+  }
+
+  .portfolio-experience__section-container {
+    flex-direction: column;
+  }
+
+  .portfolio-experience__section-description p {
+    text-align: right;
+    margin-right: 2rem;
+    margin-left: 1rem;
+
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+}

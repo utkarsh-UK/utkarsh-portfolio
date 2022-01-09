@@ -1,0 +1,166 @@
+:global(#contact) {
+  padding-bottom: 5rem;
+}
+
+.portfolio-contact__container {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-contact__work-details {
+  flex: 1;
+  width: 45%;
+  padding: 4rem 2.5rem;
+  position: relative;
+  box-sizing: border-box;
+
+  background: var(--color-contact-background);
+  font-family: var(--font-primary);
+}
+
+.portfolio-contact__work-details h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  width: 90%;
+  margin: 0;
+  margin-bottom: 3rem;
+
+  z-index: 10;
+}
+
+.portfolio-contact__work-details p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  width: 80%;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.portfolio-contact__work-details hr {
+  border: none;
+  background: #1b1b1b;
+  height: 1px;
+
+  width: 80%;
+  margin: 0 auto;
+}
+
+.portfolio-contact__social-info {
+  flex: 1.4;
+  font-family: var(--font-primary);
+  box-sizing: border-box;
+}
+
+.portfolio-contact__social-info h6 {
+  margin-left: 5rem;
+  width: 70%;
+
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #1b1b1b;
+}
+
+.portfolio-contact__social-info h6 strong {
+  color: #fb8500;
+}
+
+.portfolio-contact__social-info button {
+  padding: 1.2rem 3rem;
+  width: 70%;
+  margin: 0 0 0 5rem;
+  box-sizing: border-box;
+  position: relative;
+
+  border: 1px solid var(--color-button-border);
+  background: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #1b1b1b;
+
+  transition: all 2s linear;
+  transform-origin: 0 100px;
+}
+
+.circle {
+  width: 65%;
+  height: 95%;
+  line-height: 500px;
+  border-radius: 50%;
+  border: 4px solid #ff87ab;
+
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+
+.inner-circle {
+  width: 50%;
+  height: 50%;
+  line-height: 500px;
+  border-radius: 50%;
+  border: 4px solid #ff87ab;
+
+  position: absolute;
+  top: 50%;
+  bottom: translateY(-50%);
+  left: 10%;
+
+  z-index: 1;
+}
+
+/* ********************************** Sudo Selectors ********************************** */
+
+.portfolio-contact__social-info h6 strong:hover {
+  cursor: pointer;
+}
+
+.portfolio-contact__social-info button:hover {
+  cursor: pointer;
+}
+
+.portfolio-contact__social-info button:hover::after {
+  content: "Click to copy";
+  position: absolute;
+  background: #ff90b3e6;
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ********************************** Media Queries ********************************** */
+
+@media screen and (max-width: 768px) {
+  .portfolio-contact__container {
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+  }
+
+  .portfolio-contact__work-details {
+    width: 100vw;
+    padding: 3rem 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .portfolio-contact__social-info button {
+    padding: 1.2rem 3rem;
+    width: 80%;
+    margin: 0 0 0 5rem;
+
+    border: 1px solid var(--color-button-border);
+    background: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #1b1b1b;
+  }
+}

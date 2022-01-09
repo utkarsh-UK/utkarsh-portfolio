@@ -1,0 +1,132 @@
+article {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+
+  margin-bottom: 2rem;
+}
+
+article.reverse {
+  flex-direction: row-reverse;
+}
+
+.portfolio-article__company-background-right,
+.portfolio-article__company-background-left {
+  flex: 1;
+
+  width: 50%;
+  height: 150px;
+  box-sizing: border-box;
+
+  padding: 1rem 2rem;
+}
+
+.portfolio-article__company-background-right {
+  background: var(--gradient-background-1);
+  border-radius: 0 4px 4px 0;
+
+  text-align: right;
+}
+
+.portfolio-article__company-background-right h4,
+.portfolio-article__company-background-left h4 {
+  margin: 0;
+  margin-bottom: 1rem;
+
+  font-family: var(--font-primary);
+  color: var(--color-experience-company);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.portfolio-article__company-background-right h4 {
+  width: 60%;
+}
+
+.portfolio-article__company-background-right p,
+.portfolio-article__company-background-left p {
+  width: 70%;
+  margin: 0;
+
+  font-family: var(--font-primary);
+  color: var(--color-experience-role);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.portfolio-article__company-content-right,
+.portfolio-article__company-content-left {
+  flex: 1.6;
+  width: 90%;
+
+  padding: 1rem 2rem;
+  color: var(--color-experience-role);
+}
+
+.portfolio-article__company-content-right {
+  text-align: right;
+}
+
+/* reverse */
+
+.portfolio-article__company-background-left {
+  background: var(--gradient-background-2);
+  border-radius: 4px 0 0 4px;
+
+  text-align: left;
+}
+
+.portfolio-article__company-background-left h4 {
+  width: 40%;
+}
+
+.portfolio-article__company-content-left {
+  text-align: left;
+}
+
+/* ********************************** Media Queries ********************************** */
+
+@media screen and (max-width: 768px) {
+  article {
+    margin-bottom: 2rem;
+    flex-direction: column;
+  }
+
+  article.reverse {
+    flex-direction: column;
+  }
+
+  .portfolio-article__company-background-right,
+  .portfolio-article__company-background-left {
+    width: 90%;
+  }
+
+  .portfolio-article__company-background-left {
+    align-self: flex-end;
+  }
+
+  .portfolio-article__company-background-right h4,
+  .portfolio-article__company-background-left h4 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+
+    width: 70%;
+  }
+
+  .portfolio-article__company-background-right p,
+  .portfolio-article__company-background-left p {
+    width: 70%;
+
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .portfolio-article__company-content-right,
+  .portfolio-article__company-content-left {
+    padding: 1rem;
+  }
+}

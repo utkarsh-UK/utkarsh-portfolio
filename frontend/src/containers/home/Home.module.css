@@ -1,0 +1,374 @@
+@import "../../index.css";
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: var(--color-primary);
+
+  display: flex;
+
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.section_padding {
+  padding: 0rem 5rem 0;
+}
+
+.portfolio-home__header-content {
+  flex: 2;
+  position: relative;
+}
+
+.portfolio-home__header-role {
+  position: relative;
+}
+
+.portfolio-home__header-role h3 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-home__header-role hr {
+  border: none;
+  background: var(--color-secondary);
+  height: 3px;
+  width: 80%;
+}
+
+.small-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #ffffff4f;
+
+  position: absolute;
+  top: 10px;
+  right: 30%;
+}
+
+.portfolio-home__header-pitch,
+.portfolio-home__header-personal {
+  padding: 0 5rem;
+}
+
+.portfolio-home__header-pitch {
+  text-align: left;
+}
+
+.portfolio-home__header-pitch h6 {
+  font-weight: 500;
+  font-size: 1.2rem;
+
+  margin: 2rem 0 0;
+  padding: 0;
+}
+
+.portfolio-home__header-pitch p {
+  width: 70%;
+  padding: 0;
+
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.portfolio-home__header-personal {
+  text-transform: capitalize;
+  font-family: var(--font-secondary);
+}
+
+.portfolio-home__header-personal h1 {
+  text-transform: uppercase;
+}
+
+.portfolio-home__header-personal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.portfolio-home__header-personal h1 {
+  font-size: 3rem;
+}
+
+.portfolio-home__header-personal h1 b {
+  opacity: 0.5;
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.pulse {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent;
+  border: 3px solid #fff;
+
+  position: absolute;
+  top: -5px;
+  right: -20px;
+}
+
+.portfolio-home__header-links {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  text-align: center;
+
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+
+  transition: 0.2s linear;
+}
+
+.social-icons {
+  position: relative;
+
+  margin: auto;
+  margin-top: 5px;
+
+  transition: all 1s ease-in;
+}
+
+/* .portfolio-home__header-image {
+  opacity: 0.75;
+  background: var(--color-secondary);
+} */
+
+.portfolio-home__header-image img {
+  flex: 1.6;
+  width: 100%;
+  height: 100vh;
+}
+
+.portfolio-home__header-companies {
+  height: 90px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.8rem;
+  box-sizing: border-box;
+
+  background: var(--color-secondary);
+}
+
+.portfolio-home__header-companies img {
+  width: 15%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-home__header-companies img:first-child {
+  object-fit: contain;
+}
+
+/* ********************************** Sudo Selectors ********************************** */
+
+.circle:hover {
+  background: #fff;
+}
+
+.circle:hover .social-icons {
+  color: var(--color-secondary);
+  transform: scale(1.4);
+}
+
+/* ********************************** Media Queries ********************************** */
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .section_padding {
+    padding: 0rem 1rem 0 2rem;
+  }
+
+  .portfolio-home__header-content {
+    width: 100%;
+    flex: 3;
+    position: static;
+  }
+
+  .portfolio-home__header-role h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .small-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ffffff4f;
+
+    position: absolute;
+    top: 0px;
+    right: 20%;
+  }
+
+  .portfolio-home__header-pitch,
+  .portfolio-home__header-personal {
+    padding: 0 2rem 0 2rem;
+  }
+
+  .portfolio-home__header-pitch {
+    width: 90%;
+  }
+
+  .portfolio-home__header-pitch h6 {
+    font-size: 1rem;
+
+    margin: 2rem 1rem 0 0;
+    padding: 0;
+  }
+
+  .portfolio-home__header-pitch p {
+    width: 80%;
+    padding: 0;
+
+    font-weight: 300;
+    font-size: 0.8rem;
+  }
+
+  .portfolio-home__header-personal {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    text-align: start;
+  }
+
+  .portfolio-home__header-personal h1 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .portfolio-home__header-personal h1 b {
+    opacity: 0.5;
+    font-size: 2rem;
+  }
+
+  .pulse {
+    width: 20px;
+    height: 20px;
+
+    top: -5px;
+    right: -10px;
+  }
+
+  .portfolio-home__header-links {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .portfolio-home__header-companies {
+    height: 90px;
+    width: 100%;
+    position: relative;
+
+    background: var(--color-secondary);
+    text-align: center;
+  }
+
+  .portfolio-home__header-image img {
+    flex: 1.6;
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+  }
+
+  .portfolio-home__header-companies img {
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+/* ********************************** Animations ********************************** */
+
+.pulse-container {
+  position: relative;
+
+  position: absolute;
+  top: -5px;
+  right: 5px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border: 5px solid #fff;
+  border-radius: 600px;
+  background-color: #fff;
+  z-index: 10;
+  position: absolute;
+}
+
+.base-pulse {
+  background: transparent;
+  border-radius: 600px;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: 1;
+  opacity: 0;
+  border: 5px solid #fff;
+}
+
+.pulse1 {
+  animation: pulse1 2s ease-out infinite;
+}
+
+.pulse2 {
+  animation: pulse1 2s ease-out infinite;
+  animation-delay: 1000ms;
+}
+
+@keyframes pulse1 {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse1 {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+}
