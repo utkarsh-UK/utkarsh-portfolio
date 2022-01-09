@@ -1,93 +1,135 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import Grid from "@mui/material/Grid";
 
-import { Article, SectionTitle } from "../../components/index";
-import { experience } from "../../content/index";
+import {
+  Article,
+  ExperienceTile,
+  LongArrow,
+  SectionTitle,
+  Skill,
+  IconContainer,
+} from "../../components/index";
+import { experience, skills } from "../../content/index";
 
 import classes from "./Experience.module.css";
 
 const Experience = () => {
-  const [current, setCurrent] = useState(0);
-
-  const experiences = experience
-    .map((e, i) => {
-      if (i % 2 !== 0) {
-        return [
-          <Article
-            key={i}
-            title={experience[i - 1].company}
-            role={experience[i - 1].role}
-            content={experience[i - 1].content}
-            animationClasses={classes["slide"]}
-          />,
-          e.company && (
-            <Article
-              key={i}
-              isContentRight={false}
-              title={e.company}
-              role={e.role}
-              content={e.content}
-              animationClasses={classes["slide"]}
-            />
-          ),
-        ];
-      } else return null;
-    })
-    .filter((e) => e !== null);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setCurrent(current < experiences.length - 1 ? current + 1 : 0);
-    }, 8000);
-
-    return () => clearTimeout(timer);
-  }, [current, experiences]);
-
-  const handleDotClick = (i) => {
-    setCurrent(i);
-  };
-
   return (
-    <section id="experience">
-      <SectionTitle
-        mainTitle="What I Have Done"
-        subTitle="Throughout My Career"
-        backgroundTitle="EXPERIENCE"
-      />
+    <section id="experience" className={classes["section_padding"]}>
+      <div className={classes["portfolio-experience__col-1"]}>
+        <SectionTitle
+          title="Skills & Experience"
+          description="I always take responsibility for the direction, I look more broadly at
+          the whole business. Figuring out solutions to complex problems and
+          develop it, ughh! That's what I live for. Let's work together and be
+          each other's important asset."
+        />
 
-      {experiences.map((exp, index) => (
-        <div className={classes["container-slider"]} key={index}>
-          {index === current && exp}
+        <div className={classes["portofolio-experience__skills-grid"]}>
+          <h5 className={classes["sub-title"]}>Skills</h5>
+          <Grid
+            container
+            rowSpacing={1}
+            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+          >
+            <Grid container item spacing={2}>
+              <Grid item xs={4}>
+                <div
+                  className={classes["portfolio-experience__skills-wrapper"]}
+                >
+                  <IconContainer icon={<LongArrow />} />
+                  <p>NodeJS </p>
+                </div>
+              </Grid>
+              <Grid item xs={4}>
+                <div
+                  className={classes["portfolio-experience__skills-wrapper"]}
+                >
+                  <IconContainer icon={<LongArrow />} />
+                  <p>ReactJS </p>
+                </div>
+              </Grid>
+              <Grid item xs={4}>
+                <div
+                  className={classes["portfolio-experience__skills-wrapper"]}
+                >
+                  <IconContainer icon={<LongArrow />} />
+                  <p>Flutter </p>
+                </div>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={2}>
+              <Grid item xs={4}>
+                <div
+                  className={classes["portfolio-experience__skills-wrapper"]}
+                >
+                  <IconContainer icon={<LongArrow />} />
+                  <p>Android </p>
+                </div>
+              </Grid>
+              <Grid item xs={4}>
+                <div
+                  className={classes["portfolio-experience__skills-wrapper"]}
+                >
+                  <IconContainer icon={<LongArrow />} />
+                  <p>MongoDB </p>
+                </div>
+              </Grid>
+              <Grid item xs={4}>
+                <div
+                  className={classes["portfolio-experience__skills-wrapper"]}
+                >
+                  <IconContainer icon={<LongArrow />} />
+                  <p>MySQL </p>
+                </div>
+              </Grid>
+            </Grid>
+            <Grid container item spacing={2}>
+              <Grid item xs={4}>
+                <div
+                  className={classes["portfolio-experience__skills-wrapper"]}
+                >
+                  <IconContainer icon={<LongArrow />} />
+                  <p>Firebase </p>
+                </div>
+              </Grid>
+              <Grid item xs={4}>
+                <div
+                  className={classes["portfolio-experience__skills-wrapper"]}
+                >
+                  <IconContainer icon={<LongArrow />} />
+                  <p>AdobeXD </p>
+                </div>
+              </Grid>
+              <Grid item xs={4}>
+                <div
+                  className={classes["portfolio-experience__skills-wrapper"]}
+                >
+                  <IconContainer icon={<LongArrow />} />
+                  <p>GitHub </p>
+                </div>
+              </Grid>
+            </Grid>
+          </Grid>
         </div>
-      ))}
-
-      <div className={classes["container-dots"]}>
-        {Array.from({ length: experiences.length }).map((_, i) => (
-          <div
-            onClick={handleDotClick.bind(this, i)}
-            key={i}
-            className={
-              current === i
-                ? `${classes["dot"]} ${classes["active"]}`
-                : classes["dot"]
-            }
-          ></div>
-        ))}
       </div>
 
-      {/* <Article
-        title={experience[0].company}
-        role={experience[0].role}
-        content={experience[0].content}
-      />
-
-      <Article
-        isContentRight={false}
-        title={experience[1].company}
-        role={experience[1].role}
-        content={experience[1].content}
-      /> */}
+      <div className={classes["portfolio-experience__col-2"]}>
+        <h5 className={`${classes["sub-title"]} ${classes["margin-removed"]}`}>
+          Experience
+        </h5>
+        {experience.map((ex, i) => (
+          <ExperienceTile
+            name={ex.company}
+            role={ex.role}
+            date={`${ex.from} - ${ex.to}`}
+            description={ex.content}
+            key={i}
+          />
+        ))}
+      </div>
     </section>
   );
 };

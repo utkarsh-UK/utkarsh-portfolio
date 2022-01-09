@@ -1,53 +1,97 @@
-section {
-  padding: 3rem 0 0;
-  position: relative;
-}
-
-.container-slider {
-  position: relative;
-}
-
-.slide {
-  opacity: 1;
-  transition: opacity ease-in-out 0.4s;
-}
-
-.active-anim {
-  opacity: 1;
-}
-
-.container-dots {
-  position: absolute;
-  bottom: -10%;
-  left: 50%;
-  transform: translateX(-50%);
+.section_padding {
+  width: 100%;
   display: flex;
-}
+  position: relative;
 
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 2px solid var(--color-secondary-light);
-  margin: 0 10px;
-  background: var(--color-secondary-light);
-  transition: all ease-in-out 0.4s;
-  cursor: pointer;
+  padding: 2.5rem;
   box-sizing: border-box;
 }
 
-.dot.active {
-  background: var(--color-primary);
-  transform: scale(1.5);
-  border: 1px solid var(--color-secondary-light);
+.portfolio-experience__col-1 {
+  flex: 46%;
+}
+
+.portfolio-experience__col-2 {
+  flex: 54%;
+}
+
+.portofolio-experience__skills-grid {
+  bottom: 0;
+  width: 70%;
+}
+
+.sub-title {
+  font-family: var(--font-headings);
+  font-weight: 400;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6em;
+
+  color: var(--color-secondary-font);
+}
+
+.margin-removed {
+  margin: 0 0 1rem;
+}
+
+.portfolio-experience__skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+/* ********************************** Sudo Selectors ********************************** */
+
+.portfolio-experience__skills-wrapper:hover::after {
+  content: " have a total on 1+ year of experience working in NodeJS along with other technologies in MERN stack and created total 10 projects.";
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 100%;
+  height: 200%;
+
+  font-size: 0.5rem;
+  background: var(--color-secondary);
+  color: #fff;
+  z-index: -1;
+}
+
+.portfolio-experience__skills-wrapper:hover div:first-child {
+  background: #fff;
+}
+
+.portfolio-experience__skills-wrapper:hover p {
+  display: none;
 }
 
 /* ********************************** Media Queries ********************************** */
 
 @media screen and (max-width: 768px) {
-  .container-dots {
-    position: absolute;
-    bottom: -5%;
-    margin-bottom: 1rem;
+  .section_padding {
+    flex-direction: column;
+    padding: 0.6rem 2rem;
+
+    height: unset;
+  }
+
+  .portfolio-experience__col-1 {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .portfolio-experience__col-2 {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .sub-title {
+    font-size: 1.3rem;
+  }
+
+  .portofolio-experience__skills-grid {
+    width: 100%;
   }
 }

@@ -1,8 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&family=Rowdies:wght@400;700&family=Sail&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&family=Rowdies:wght@300;400&family=Sora:wght@300;400;500;700&display=swap");
 
 :root {
-  --color-primary: #219ebc;
-  --color-secondary: #023047;
+  --color-primary: #fcda68;
+  --color-secondary: #8873ef;
+  --color-primary-font: #18171c;
+  --color-secondary-font: #383838;
+  --color-project-tile-border: #374785;
+
   --color-secondary-light: #8ecae6;
   --color-title-text: #7400b8;
   --color-secondary-text: #ffe5d9;
@@ -17,9 +21,9 @@
   --gradient-background-1: linear-gradient(115deg, #ebf4f5 27%, #b5c6e0 100%);
   --gradient-background-2: linear-gradient(90deg, #f6d5f7 2%, #fbe9d7 57%);
 
-  --font-primary: "Heebo", sans-serif;
-  --font-secondary: "Rowdies", cursive;
-  --font-heading: "Sail", cursive;
+  --font-primary: "Sora", sans-serif;
+  --font-secondary: "Nunito", sans-serif;
+  --font-headings: "Rowdies", cursive;
 }
 
 html,
@@ -33,10 +37,10 @@ body {
 
 ::-moz-selection {
   color: #000;
-  background: var(--color-button-border);
+  background: var(--color-secondary);
 }
 
 ::selection {
   color: #000;
-  background: var(--color-button-border);
+  background: var(--color-secondary);
 }

@@ -1,36 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 
-import { AngleDown, AngleUp } from "../../components/index";
+import { LongArrow, IconContainer } from "../../components/index";
 
 import classes from "./Skill.module.css";
 
-const Skill = ({ title, content }) => {
-  const [isActive, setActive] = useState(true);
-
-  const handleClick = () => {
-    setActive((prevActive) => !prevActive);
-  };
-
-  const contentClass = isActive
-    ? `${classes["portfolio-skills__skill-content__wrapper"]} ${classes["active"]}`
-    : `${classes["portfolio-skills__skill-content__wrapper"]}`;
-
+const Skill = ({ title, number }) => {
   return (
-    <div className={classes["portfolio-skills__skill-div"]}>
-      <div className={classes["portfolio-skills__skill-title__wrapper"]} onClick={handleClick}>
-        <h3> {title} </h3>
-        {!isActive ? (
-          <AngleUp onClick={handleClick} width="30px" height="30px" />
-        ) : (
-          <AngleDown onClick={handleClick} height="40px" width="40px" />
-        )}
-      </div>
+    <div className={classes["portfolio-services__skill-container"]}>
+      <hr />
+      <div className={classes["portfolio-services__skill-content"]}>
+        <p className={classes["skill-number"]}> {number}/ </p>
 
-      <div className={contentClass}>
-        <p>{content}</p>
-      </div>
+        <div className={classes["portfolio-services__skill-title-wrapper"]}>
+          <h4> {title} </h4>
+          <div className={classes["portfolio-services__skill-explore"]}>
+            <p>Explore</p>
 
-      <hr className={classes["portfolio-skills__skill-hr"]} />
+            <IconContainer icon={<LongArrow />} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

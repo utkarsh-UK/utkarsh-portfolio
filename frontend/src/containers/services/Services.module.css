@@ -1,0 +1,32 @@
+.section_padding {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+  background: var(--color-primary);
+  padding: 2.5rem;
+  box-sizing: border-box;
+}
+
+.portfolio-services__col-1 {
+  flex: 46%;
+}
+
+.portfolio-services__col-2 {
+  flex: 54%;
+}
+
+/* ********************************** Media Queries ********************************** */
+
+@media screen and (max-width: 768px) {
+  .section_padding {
+    flex-direction: column;
+    padding: 0.6rem 2rem;
+
+    height: unset;
+  }
+
+  .portfolio-services__col-1 {
+    margin-bottom: 2rem;
+  }
+}

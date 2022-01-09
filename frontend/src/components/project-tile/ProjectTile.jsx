@@ -1,30 +1,25 @@
 import React from "react";
 
-// import projectImage from "../../images/project.jpg";
+import { IconContainer, LongArrow } from "../../components/index";
 
 import classes from "./ProjectTile.module.css";
 
 const ProjectTile = ({ project, projectImage }) => {
   return (
-    <div className={classes["portfolio-projects__element-wrapper"]}>
-      <img
-        src={projectImage}
-        alt={project.title}
-        className={classes["portfolio-projects__image"]}
-      />
+    <div className={classes["portfolio-latest-projects__project-tile"]}>
+      <hr />
 
-      <div className={classes["portfolio-projects__hashtags-div"]}>
-        {project.tools.map((tool, index) => (
-          <p key={index}> {tool} </p>
-        ))}
+      <div className={classes["portfolio-project__content-wrapper"]}>
+        <div className={classes["portfolio-project-tile-content"]}>
+          <h6> {project.title} </h6>
+          <p> {project.tech} </p>
+        </div>
+
+        <IconContainer icon={<LongArrow />} />
       </div>
 
-      <div className={classes["portfolio-projects__bottom-container"]}>
-        <button className={classes["view-more-btn"]}>View More</button>
-
-        <div className={classes["portfolio-projects__project-name"]}>
-          <h4> {project.title} </h4>
-        </div>
+      <div className={classes["portfolio-project-tile_image-box"]}>
+        <img src={projectImage} alt="" />
       </div>
     </div>
   );

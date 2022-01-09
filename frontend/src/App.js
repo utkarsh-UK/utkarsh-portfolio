@@ -7,23 +7,23 @@ import {
   Experience,
   Footer,
   Home,
-  Projects,
-  Skills,
+  LatestProjects,
+  Services,
   Traits,
 } from "./containers/index";
 
 const App = () => {
   return (
     <Fragment>
-      <Home />
+      {/* <Home /> */}
       <main>
+        <Services />
         <Experience />
-        <Skills />
-        <Projects />
-        <Traits />
-        <Contact />
+        <LatestProjects />
+        {/* <Traits /> */}
+        {/* <Contact /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </Fragment>
   );
 };

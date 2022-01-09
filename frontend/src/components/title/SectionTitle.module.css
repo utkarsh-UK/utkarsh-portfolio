@@ -1,121 +1,56 @@
-.portfolio-experience__section-container {
+.portfolio-section__container h2 {
+  margin: 0 0 1.5rem;
+
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 2.5rem;
+  color: var(--color-primary-font);
+}
+
+.portfolio-section__description-box {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  margin-left: 1.5rem;
 }
 
-.portfolio-experience__section-title {
-  margin-left: 5rem;
-  margin-bottom: 2.5rem;
-  width: 40%;
-  position: relative;
-}
-
-.portfolio-experience__section-title h2 {
-  margin: 0;
-
-  font-family: var(--font-secondary);
-  font-size: 3rem;
-  color: var(--color-title-text);
-}
-
-.portfolio-experience__section-title h5 {
-  margin: 0;
-  margin-top: 1rem;
-
-  font-family: var(--font-secondary);
-  font-size: 1.5rem;
-  color: var(--color-title-text);
-}
-
-.portfolio-experience__section-display-title {
-  position: absolute;
-  left: -35px;
-  top: 40%;
-
-  z-index: -1;
-}
-
-.portfolio-experience__section-display-title h1 {
-  margin: 0;
-
-  font-family: var(--font-secondary);
-  color: var(--color-secondary-text);
-  font-size: 3.5rem;
-  text-transform: capitalize;
-  letter-spacing: 8px;
-}
-
-.portfolio-experience__section-description {
-  flex: 0.7;
-}
-
-.portfolio-experience__section-description p {
-  text-align: right;
-  margin-right: 2rem;
-
-  font-weight: 500;
-}
-
-.portfolio-experience__section-description button {
-  margin-left: auto;
+.portfolio-section__description-box hr {
+  width: 5%;
+  height: 2px;
+  flex: 0.2;
 
   border: none;
-  padding: 1rem 2rem;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 500;
-  font-family: var(--font-primary);
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: transparent;
-  cursor: pointer;
+  border-top: 2px solid var(--color-secondary-font);
 }
 
-.portfolio-experience__section-description button svg {
-  margin-left: 2rem;
+.portfolio-section__description-box p {
+  width: 100%;
+  flex: 3;
+  margin: 0;
+  margin-left: 1rem;
+
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+
+  color: var(--color-secondary-font);
 }
 
 /* ********************************** Media Queries ********************************** */
 
 @media screen and (max-width: 768px) {
-  .portfolio-experience__section-title {
-    margin-left: 2rem;
-    width: 80%;
+  .portfolio-section__container h2 {
+    width: 70%;
+    margin: 0 0 1rem;
+
+    font-size: 1.7rem;
+    line-height: 2rem;
   }
 
-  .portfolio-experience__section-title h2 {
-    font-size: 2rem;
-  }
-
-  .portfolio-experience__section-title h5 {
-    font-size: 1.3rem;
-  }
-
-  .portfolio-experience__section-display-title h1 {
-    font-size: 2rem;
-  }
-
-  .portfolio-experience__section-display-title {
-    position: absolute;
-    left: -20px;
-    top: 60%;
-
-    z-index: -1;
-  }
-
-  .portfolio-experience__section-container {
-    flex-direction: column;
-  }
-
-  .portfolio-experience__section-description p {
-    text-align: right;
-    margin-right: 2rem;
-    margin-left: 1rem;
-
-    font-weight: 500;
-    font-size: 0.8rem;
+  .portfolio-section__description-box {
+    width: 95%;
   }
 }

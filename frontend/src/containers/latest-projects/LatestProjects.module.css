@@ -1,0 +1,48 @@
+.section_padding {
+  width: 100%;
+  /* height: 100vh; */
+  background: var(--color-primary);
+
+  padding: 2.5rem;
+  box-sizing: border-box;
+}
+
+.portfolio-latest-projects__container {
+  width: 95%;
+  margin: 3rem 0 0 3.5rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-latest-projects__container > div:not(:first-child) {
+  transform: translateY(-30%);
+}
+
+.portfolio-latest-projects__container > div:last-child {
+  transform: translateY(-60%);
+}
+
+/* ********************************** Media Queries ********************************** */
+
+@media screen and (max-width: 768px) {
+  .section_padding {
+    flex-direction: column;
+    padding: 0.6rem 2rem;
+
+    height: unset;
+  }
+
+  .portfolio-latest-projects__container {
+    flex-direction: column;
+    margin: 3rem 0 0 0rem;
+  }
+
+  .portfolio-latest-projects__container > div:not(:first-child) {
+    transform: translateY(0%);
+  }
+
+  .portfolio-latest-projects__container > div:last-child {
+    transform: translateY(0%);
+  }
+}
