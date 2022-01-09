@@ -1,17 +1,13 @@
 import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
 import Grid from "@mui/material/Grid";
 
 import {
-  Article,
   ExperienceTile,
+  IconContainer,
   LongArrow,
   SectionTitle,
-  Skill,
-  IconContainer,
 } from "../../components/index";
-import { experience, skills } from "../../content/index";
+import { experience } from "../../content/index";
 
 import classes from "./Experience.module.css";
 

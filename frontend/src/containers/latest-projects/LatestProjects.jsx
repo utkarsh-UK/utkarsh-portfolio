@@ -1,16 +1,9 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import { AppIcon, ProjectTile, SectionTitle } from "../../components/index";
 
-import {
-  SectionTitle,
-  ProjectTile,
-  IconContainer,
-  LongArrow,
-} from "../../components/index";
 import { projects } from "../../content/index";
-import { persuitImage, sacredImage, annadataImage } from "./images";
+import { annadataImage, persuitImage, sacredImage } from "./images";
 
 import classes from "./LatestProjects.module.css";
 
@@ -27,9 +20,13 @@ const LatestProjects = () => {
 
       <div className={classes["portfolio-latest-projects__container"]}>
         {projects.map((proj, i) => (
-          <ProjectTile project={proj} projectImage={sacredImage} />
+          <ProjectTile project={proj} key={i} projectImage={projectImages[i]} />
         ))}
       </div>
+
+      <button className={classes["view-all"]}>
+        <AppIcon /> View All Projects
+      </button>
     </section>
   );
 };

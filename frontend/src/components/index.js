@@ -6,3 +6,4 @@ export { default as ProjectTile } from "./project-tile/ProjectTile";
 export { default as LongArrow } from "./long-arrow/LongArrow";
 export { default as ArrowDown } from "./arrow-down/ArrowDown";
 export { default as IconContainer } from "./icon-container/IconContainer";
+export { default as AppIcon } from "./app-icon/AppIcon";

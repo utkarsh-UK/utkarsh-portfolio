@@ -23,6 +23,25 @@
   transform: translateY(-60%);
 }
 
+button.view-all {
+  margin-left: auto;
+  width: 17%;
+  padding: 1rem 1rem;
+
+  border: none;
+  border-radius: 35px;
+  background: var(--color-secondary);
+  color: #fff;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 /* ********************************** Media Queries ********************************** */
 
 @media screen and (max-width: 768px) {
@@ -44,5 +63,18 @@
 
   .portfolio-latest-projects__container > div:last-child {
     transform: translateY(0%);
+  }
+
+  button.view-all {
+    margin: 0 auto;
+    width: 80%;
+    padding: 0.75rem 0.8rem;
+
+    font-size: 0.8rem;
+  }
+
+  button.view-all svg {
+    width: 20px;
+    height: 20px;
   }
 }

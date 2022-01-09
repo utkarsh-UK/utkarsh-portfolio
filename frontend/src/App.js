@@ -5,25 +5,21 @@ import "./App.module.css";
 import {
   Contact,
   Experience,
-  Footer,
   Home,
   LatestProjects,
   Services,
-  Traits,
 } from "./containers/index";
 
 const App = () => {
   return (
     <Fragment>
-      {/* <Home /> */}
+      <Home />
       <main>
         <Services />
         <Experience />
         <LatestProjects />
-        {/* <Traits /> */}
-        {/* <Contact /> */}
+        <Contact />
       </main>
-      {/* <Footer /> */}
     </Fragment>
   );
 };

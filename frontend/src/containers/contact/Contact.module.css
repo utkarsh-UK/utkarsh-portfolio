@@ -1,166 +1,89 @@
-:global(#contact) {
-  padding-bottom: 5rem;
+.section_padding {
+  width: 100%;
+  display: flex;
+  position: relative;
+
+  padding: 10rem 2.5rem;
+  box-sizing: border-box;
 }
 
-.portfolio-contact__container {
-  width: 100%;
+.portfolio-contact__col-1 {
+  flex: 60%;
 
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.portfolio-contact__work-details {
-  flex: 1;
-  width: 45%;
-  padding: 4rem 2.5rem;
-  position: relative;
-  box-sizing: border-box;
+.portfolio-contact__col-2 {
+  flex: 40%;
 
-  background: var(--color-contact-background);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.portfolio-contact__col-1 h2 {
+  width: 70%;
+
   font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4rem;
+
+  color: var(--color-primary-font);
 }
 
-.portfolio-contact__work-details h2 {
+.portfolio-contact__col-1 h2 em {
+  text-decoration: underline;
+  cursor: pointer;
+
+  color: var(--color-secondary);
+}
+
+.sub-title {
+  font-family: var(--font-headings);
   font-weight: 400;
-  font-size: 1.5rem;
-  width: 90%;
-  margin: 0;
-  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6em;
 
-  z-index: 10;
+  color: var(--color-secondary-font);
 }
 
-.portfolio-contact__work-details p {
-  font-weight: 300;
-  font-size: 1.2rem;
-  width: 80%;
-  margin: 0;
-  margin-bottom: 3rem;
+.margin-removed {
+  margin: 0 0 1rem;
 }
 
-.portfolio-contact__work-details hr {
-  border: none;
-  background: #1b1b1b;
-  height: 1px;
-
-  width: 80%;
-  margin: 0 auto;
-}
-
-.portfolio-contact__social-info {
-  flex: 1.4;
-  font-family: var(--font-primary);
-  box-sizing: border-box;
-}
-
-.portfolio-contact__social-info h6 {
-  margin-left: 5rem;
-  width: 70%;
-
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #1b1b1b;
-}
-
-.portfolio-contact__social-info h6 strong {
-  color: #fb8500;
-}
-
-.portfolio-contact__social-info button {
-  padding: 1.2rem 3rem;
-  width: 70%;
-  margin: 0 0 0 5rem;
-  box-sizing: border-box;
-  position: relative;
-
-  border: 1px solid var(--color-button-border);
-  background: #fff;
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: #1b1b1b;
-
-  transition: all 2s linear;
-  transform-origin: 0 100px;
-}
-
-.circle {
-  width: 65%;
-  height: 95%;
-  line-height: 500px;
-  border-radius: 50%;
-  border: 4px solid #ff87ab;
-
-  position: absolute;
-  top: 0;
-  left: 10%;
-}
-
-.inner-circle {
-  width: 50%;
-  height: 50%;
-  line-height: 500px;
-  border-radius: 50%;
-  border: 4px solid #ff87ab;
-
-  position: absolute;
-  top: 50%;
-  bottom: translateY(-50%);
-  left: 10%;
-
-  z-index: 1;
-}
-
-/* ********************************** Sudo Selectors ********************************** */
-
-.portfolio-contact__social-info h6 strong:hover {
-  cursor: pointer;
-}
-
-.portfolio-contact__social-info button:hover {
-  cursor: pointer;
-}
-
-.portfolio-contact__social-info button:hover::after {
-  content: "Click to copy";
-  position: absolute;
-  background: #ff90b3e6;
-
+.portfolio-contact__tile-container {
   width: 100%;
-  height: 100%;
+  margin-bottom: 1rem;
+}
+
+.portfolio-contact__tile-container hr {
+  width: 100%;
+  height: 0px;
+
+  border: 2px solid var(--color-primary-font);
+  border-radius: 5px;
+}
+
+.portfolio-contact__tile-wrapper {
+  width: 100%;
+
   display: flex;
   align-items: center;
-  justify-content: center;
-  top: 0;
-  left: 0;
+  justify-content: flex-start;
 
-  color: #fff;
-  font-weight: 500;
+  padding: 1rem 0 0 1rem;
 }
 
-/* ********************************** Media Queries ********************************** */
+.portfolio-contact__tile-wrapper p {
+  margin-left: 1rem;
 
-@media screen and (max-width: 768px) {
-  .portfolio-contact__container {
-    flex-direction: column;
-    width: 100vw;
-    position: relative;
-  }
-
-  .portfolio-contact__work-details {
-    width: 100vw;
-    padding: 3rem 2.5rem;
-    margin-bottom: 3rem;
-  }
-
-  .portfolio-contact__social-info button {
-    padding: 1.2rem 3rem;
-    width: 80%;
-    margin: 0 0 0 5rem;
-
-    border: 1px solid var(--color-button-border);
-    background: #fff;
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: #1b1b1b;
-  }
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 1rem;
 }
