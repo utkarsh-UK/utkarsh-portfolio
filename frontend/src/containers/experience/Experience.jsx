@@ -2,14 +2,27 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 
 import {
-  ExperienceTile,
-  IconContainer,
-  LongArrow,
-  SectionTitle,
+  ExperienceTile, SectionTitle
 } from "../../components/index";
 import { experience } from "../../content/index";
+import { handleLinkOpen } from "../../helpers/helpers";
+import {
+  firebaseIcon, flutterIcon, githubIcon, mysqlIcon, nodejsIcon,
+  reactIcon
+} from "./icons";
 
 import classes from "./Experience.module.css";
+
+const SkillIconsContainer = ({ imageSource, url = "" }) => {
+  return (
+    <div
+      className={classes["icon-container"]}
+      onClick={() => handleLinkOpen(url)}
+    >
+      <img src={imageSource} alt="" />
+    </div>
+  );
+};
 
 const Experience = () => {
   return (
@@ -35,7 +48,7 @@ const Experience = () => {
                 <div
                   className={classes["portfolio-experience__skills-wrapper"]}
                 >
-                  <IconContainer icon={<LongArrow />} />
+                  <SkillIconsContainer imageSource={nodejsIcon} />
                   <p>NodeJS </p>
                 </div>
               </Grid>
@@ -43,7 +56,7 @@ const Experience = () => {
                 <div
                   className={classes["portfolio-experience__skills-wrapper"]}
                 >
-                  <IconContainer icon={<LongArrow />} />
+                  <SkillIconsContainer imageSource={reactIcon} />
                   <p>ReactJS </p>
                 </div>
               </Grid>
@@ -51,7 +64,7 @@ const Experience = () => {
                 <div
                   className={classes["portfolio-experience__skills-wrapper"]}
                 >
-                  <IconContainer icon={<LongArrow />} />
+                  <SkillIconsContainer imageSource={flutterIcon} />
                   <p>Flutter </p>
                 </div>
               </Grid>
@@ -61,7 +74,7 @@ const Experience = () => {
                 <div
                   className={classes["portfolio-experience__skills-wrapper"]}
                 >
-                  <IconContainer icon={<LongArrow />} />
+                  <SkillIconsContainer imageSource={reactIcon} />
                   <p>Android </p>
                 </div>
               </Grid>
@@ -69,7 +82,7 @@ const Experience = () => {
                 <div
                   className={classes["portfolio-experience__skills-wrapper"]}
                 >
-                  <IconContainer icon={<LongArrow />} />
+                  <SkillIconsContainer imageSource={reactIcon} />
                   <p>MongoDB </p>
                 </div>
               </Grid>
@@ -77,7 +90,7 @@ const Experience = () => {
                 <div
                   className={classes["portfolio-experience__skills-wrapper"]}
                 >
-                  <IconContainer icon={<LongArrow />} />
+                  <SkillIconsContainer imageSource={mysqlIcon} />
                   <p>MySQL </p>
                 </div>
               </Grid>
@@ -87,7 +100,7 @@ const Experience = () => {
                 <div
                   className={classes["portfolio-experience__skills-wrapper"]}
                 >
-                  <IconContainer icon={<LongArrow />} />
+                  <SkillIconsContainer imageSource={firebaseIcon} />
                   <p>Firebase </p>
                 </div>
               </Grid>
@@ -95,7 +108,7 @@ const Experience = () => {
                 <div
                   className={classes["portfolio-experience__skills-wrapper"]}
                 >
-                  <IconContainer icon={<LongArrow />} />
+                  <SkillIconsContainer imageSource={firebaseIcon} />
                   <p>AdobeXD </p>
                 </div>
               </Grid>
@@ -103,7 +116,7 @@ const Experience = () => {
                 <div
                   className={classes["portfolio-experience__skills-wrapper"]}
                 >
-                  <IconContainer icon={<LongArrow />} />
+                  <SkillIconsContainer imageSource={githubIcon} />
                   <p>GitHub </p>
                 </div>
               </Grid>

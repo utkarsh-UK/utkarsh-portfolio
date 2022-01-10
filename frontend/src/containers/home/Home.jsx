@@ -1,7 +1,23 @@
 import React from "react";
-import { IconContainer, LongArrow } from "../../components";
+
+import { handleLinkOpen } from "../../helpers/helpers";
+
+import githubImage from "../../icons/github-black.png";
+import instagramImage from "../../icons/instagram-black.png";
+import linkedinImage from "../../icons/linkedin-black.png";
 
 import classes from "./Home.module.css";
+
+const SocialIconsContainer = ({ imageSource, url = "" }) => {
+  return (
+    <div
+      className={classes["icon-container"]}
+      onClick={() => handleLinkOpen(url)}
+    >
+      <img src={imageSource} alt="" />
+    </div>
+  );
+};
 
 const Home = () => {
   return (
@@ -30,15 +46,26 @@ const Home = () => {
         </div>
 
         <div className={classes["portfolio-home__social-links"]}>
-          <IconContainer icon={<LongArrow />} />
-          <IconContainer icon={<LongArrow />} />
-          <IconContainer icon={<LongArrow />} />
+          <SocialIconsContainer
+            imageSource={linkedinImage}
+            url="https://www.linkedin.com/in/utkarsh-kore-175080174/"
+          />
+          <SocialIconsContainer
+            imageSource={githubImage}
+            url="https://github.com/utkarsh-UK"
+          />
+          <SocialIconsContainer
+            imageSource={instagramImage}
+            url="https://www.instagram.com/_utkarsh_kore_uk/"
+          />
         </div>
       </div>
 
       <div className={classes["portfolio-home__col-2"]}>
         <svg
-          width="576"
+          // width="576"
+          width="400"
+          // width="276"
           height="85vh"
           viewBox="0 0 576 900"
           fill="none"
@@ -46,8 +73,8 @@ const Home = () => {
         >
           <mask id="path-1-inside-1_28_845" fill="white">
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M307.354 5.73488C295.549 -1.7919 280.451 -1.79189 268.646 5.73489L17.1254 166.102C6.75651 172.713 0.479492 184.16 0.479492 196.457V523.615C0.479492 525.68 0.656421 527.721 0.999939 529.718V971.842H575.8V508.018H575.52V196.457C575.52 184.16 569.243 172.713 558.874 166.102L307.354 5.73488Z"
             />
           </mask>

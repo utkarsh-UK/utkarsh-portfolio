@@ -1,9 +1,24 @@
 import React from "react";
 
-import { IconContainer, LongArrow } from "../../components";
 import { Footer } from "../../containers/index";
+import { handleLinkOpen } from "../../helpers/helpers";
+
+import linkedinImage from "../../icons/linkedin-white.png";
+import mailImage from "../../icons/email-white.png";
+import mediumImage from "../../icons/medium-white.png";
 
 import classes from "./Contact.module.css";
+
+const SocialIconsContainer = ({ imageSource, url = "" }) => {
+  return (
+    <div
+      className={classes["icon-container"]}
+      onClick={() => handleLinkOpen(url)}
+    >
+      <img src={imageSource} alt="" />
+    </div>
+  );
+};
 
 const ContactTile = ({ icon, content }) => {
   return (
@@ -11,7 +26,8 @@ const ContactTile = ({ icon, content }) => {
       <hr />
 
       <div className={classes["portfolio-contact__tile-wrapper"]}>
-        <IconContainer icon={icon} />
+        <SocialIconsContainer imageSource={icon} />
+
         <p> {content} </p>
       </div>
     </div>
@@ -19,6 +35,8 @@ const ContactTile = ({ icon, content }) => {
 };
 
 const Contact = () => {
+  const conactListIcons = [mailImage, linkedinImage, mediumImage];
+
   return (
     <>
       <section id="contact" className={classes["section_padding"]}>
@@ -39,7 +57,7 @@ const Contact = () => {
           {Array.from({ length: 3 }).map((_, i) => (
             <ContactTile
               key={i}
-              icon={<LongArrow />}
+              icon={conactListIcons[i]}
               content="utkarshkore98@gmail.com"
             />
           ))}

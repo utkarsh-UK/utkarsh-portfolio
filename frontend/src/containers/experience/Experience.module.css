@@ -43,6 +43,31 @@
   position: relative;
 }
 
+.portfolio-experience__skills-wrapper p {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 0.8rem;
+
+  color: var(--color-primary-font);
+}
+
+.icon-container {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-secondary);
+  cursor: pointer;
+}
+
+.icon-container img {
+  width: 25px;
+  height: 25px;
+}
+
 /* ********************************** Sudo Selectors ********************************** */
 
 .portfolio-experience__skills-wrapper:hover::after {

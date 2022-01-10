@@ -15,7 +15,7 @@ const LatestProjects = () => {
       <SectionTitle
         title="Latest Projects"
         description="I always take responsibility for the direction, I look more broadly at the whole business. Figuring out solutions to complex problems and develop it, ughh! That's what I live for. Let's work together and be each other's important asset."
-        isFullPage
+        isFullPage={true}
       />
 
       <div className={classes["portfolio-latest-projects__container"]}>
