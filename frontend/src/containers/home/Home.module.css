@@ -5,12 +5,13 @@
   position: relative;
 
   padding: 2.5rem;
+  padding-left: 0;
   box-sizing: border-box;
 }
 
 .portfolio-home__col-1 {
   flex: 55%;
-  margin-top: 8%;
+  margin-top: 6%;
   position: relative;
 }
 
@@ -18,12 +19,32 @@
   flex: 45%;
 }
 
+.semi-circle-container {
+  width: 18.75rem;
+  height: 18.75rem;
+  border: 20px solid #fcda68;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 15%;
+  left: -50%;
+  transform: translateX(50%);
+  z-index: -1;
+}
+
+.semi-circle-container img {
+  width: 10vw;
+  height: 80vh;
+}
+
 .portfolio-home__intro-wrapper {
   width: 100%;
+  padding: 0 0 0 2.5rem;
 
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  position: relative;
 }
 
 .portfolio-home__intro-wrapper h1 {
@@ -37,6 +58,11 @@
   color: var(--color-primary-font);
 }
 
+.portfolio-home__intro-wrapper h1 em {
+  color: var(--color-secondary);
+  font-style: normal;
+}
+
 .portfolio-home__intro-wrapper p {
   margin: 0;
 
@@ -47,16 +73,32 @@
   color: var(--color-secondary-font);
 }
 
+.cute-circle {
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  right: -20px;
+  bottom: 25%;
+}
+
+.cute-circle img {
+  width: 30px;
+  height: 30px;
+}
+
 .portfolio-home__col-1 hr {
   width: 100%;
   height: 0;
   margin-top: 1.5rem;
+  padding: 0 0 0 2.5rem;
 
   border: 2px solid var(--color-secondary-font);
 }
 
 .portfolio-home__description-box {
   width: 75%;
+  padding: 0 0 0 2.5rem;
 
   display: flex;
   align-items: flex-start;
@@ -94,6 +136,7 @@
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.2rem;
+  padding: 0 0 0 2.5rem;
 
   color: var(--color-secondary-font);
 }
@@ -140,8 +183,13 @@
   .section_padding {
     flex-direction: column;
     padding: 0.6rem 2rem;
+    padding-left: 0;
 
     height: unset;
+  }
+
+  .semi-circle-container {
+    left: -100%;
   }
 
   .portfolio-home__intro-wrapper {
@@ -159,6 +207,16 @@
   .portfolio-home__intro-wrapper p {
     margin: 1rem 0 0;
     font-size: 0.9rem;
+  }
+
+  .cute-circle {
+    right: 30%;
+    bottom: 2%;
+    transform: translateX(-30%);
+  }
+
+  .portfolio-home__col-1 hr {
+    padding-left: 2rem;
   }
 
   .tag-line {

@@ -5,6 +5,8 @@ import { handleLinkOpen } from "../../helpers/helpers";
 import githubImage from "../../icons/github-black.png";
 import instagramImage from "../../icons/instagram-black.png";
 import linkedinImage from "../../icons/linkedin-black.png";
+import circleSvg from "../../icons/circle.svg";
+import semiCircleSvg from "../../icons/semi-circle.svg";
 
 import classes from "./Home.module.css";
 
@@ -23,11 +25,15 @@ const Home = () => {
   return (
     <header className={classes["section_padding"]}>
       <div className={classes["portfolio-home__col-1"]}>
+        <div className={classes["semi-circle-container"]}></div>
         <div className={classes["portfolio-home__intro-wrapper"]}>
           <h1>
-            Hii ! <br /> I’M UTKARSH
+            <em>Hii !</em> <br /> I’M UTKARSH
           </h1>
           <p>Full Stack Developer</p>
+          <div className={classes["cute-circle"]}>
+            <img src={circleSvg} alt="" />
+          </div>
         </div>
 
         <hr />

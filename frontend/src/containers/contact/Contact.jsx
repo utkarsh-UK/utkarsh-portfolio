@@ -36,6 +36,11 @@ const ContactTile = ({ icon, content }) => {
 
 const Contact = () => {
   const conactListIcons = [mailImage, linkedinImage, mediumImage];
+  const conactAccounts = [
+    "utkarshkore98@gmail.com",
+    "Utkarsh Kore",
+    "@utkarshkore",
+  ];
 
   return (
     <>
@@ -58,7 +63,7 @@ const Contact = () => {
             <ContactTile
               key={i}
               icon={conactListIcons[i]}
-              content="utkarshkore98@gmail.com"
+              content={conactAccounts[i]}
             />
           ))}
         </div>

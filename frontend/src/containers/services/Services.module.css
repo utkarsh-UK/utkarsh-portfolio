@@ -10,10 +10,25 @@
 
 .portfolio-services__col-1 {
   flex: 46%;
+  position: relative;
 }
 
 .portfolio-services__col-2 {
   flex: 54%;
+}
+
+.snowman-art {
+  position: absolute;
+  margin-top: auto;
+
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.snowman-art img {
+  width: 50%;
+  height: 50%;
 }
 
 /* ********************************** Media Queries ********************************** */
@@ -28,5 +43,9 @@
 
   .portfolio-services__col-1 {
     margin-bottom: 2rem;
+  }
+
+  .snowman-art {
+    display: none;
   }
 }

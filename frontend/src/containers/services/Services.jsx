@@ -2,6 +2,7 @@ import React from "react";
 
 import { SectionTitle, Skill } from "../../components/index";
 import { skills } from "../../content/index";
+import snowmanSvg from "../../icons/snowman.svg";
 
 import classes from "./Services.module.css";
 
@@ -18,6 +19,10 @@ const Services = () => {
           develop it, ughh! That's what I live for. Let's work together and be
           each other's important asset."
         />
+
+        <div className={classes["snowman-art"]} >
+          <img src={snowmanSvg} alt="" />
+        </div>
       </div>
 
       <div className={classes["portfolio-services__col-2"]}>
