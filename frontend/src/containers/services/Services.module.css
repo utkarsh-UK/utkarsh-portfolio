@@ -5,6 +5,7 @@
 
   background: var(--color-primary);
   padding: 2.5rem;
+  padding-bottom: 0;
   box-sizing: border-box;
 }
 
@@ -15,6 +16,7 @@
 
 .portfolio-services__col-2 {
   flex: 54%;
+  padding-bottom: 2.5rem;
 }
 
 .snowman-art {
@@ -27,8 +29,10 @@
 }
 
 .snowman-art img {
-  width: 50%;
-  height: 50%;
+  width: 60%;
+  height: 60%;
+
+  bottom: 0;
 }
 
 /* ********************************** Media Queries ********************************** */

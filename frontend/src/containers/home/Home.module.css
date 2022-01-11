@@ -6,17 +6,24 @@
 
   padding: 2.5rem;
   padding-left: 0;
+  padding-bottom: 0;
   box-sizing: border-box;
 }
 
 .portfolio-home__col-1 {
   flex: 55%;
   margin-top: 6%;
+  padding-bottom: 2.5rem;
+
   position: relative;
 }
 
 .portfolio-home__col-2 {
   flex: 45%;
+
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .semi-circle-container {
@@ -68,7 +75,7 @@
 
   font-family: var(--font-primary);
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 
   color: var(--color-secondary-font);
 }
@@ -91,7 +98,7 @@
   width: 100%;
   height: 0;
   margin-top: 1.5rem;
-  padding: 0 0 0 2.5rem;
+  margin-left: 2.5rem;
 
   border: 2px solid var(--color-secondary-font);
 }
@@ -148,15 +155,17 @@
   align-items: center;
   justify-content: space-evenly;
 
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  margin-top: 2rem;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.portfolio-home__col-2 svg {
-  margin-left: 20%;
-  margin-top: 15%;
+.portfolio-home__col-2 img {
+  width: 70%;
+  position: relative;
+  bottom: -10%;
+  z-index: -1;
 }
 
 .icon-container {
@@ -177,12 +186,46 @@
   height: 25px;
 }
 
+.scroll-indicator {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  transform: rotate(-90deg) translateY(-60%);
+  margin: 0;
+
+  position: absolute;
+  right: -20%;
+  top: 60%;
+}
+
+.scroll-indicator p {
+  display: inline-block;
+  white-space: nowrap;
+
+  letter-spacing: 0.3em;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.scroll-indicator hr {
+  display: inline-block;
+
+  height: 0;
+  border: 1px solid var(--color-secondary-font);
+  margin-left: 1rem;
+}
+
+.scroll-indicator hr.first {
+  width: 8rem;
+}
+
 /* ********************************** Media Queries ********************************** */
 
 @media screen and (max-width: 768px) {
   .section_padding {
     flex-direction: column;
-    padding: 0.6rem 2rem;
+    padding: 0.6rem 2rem 0;
     padding-left: 0;
 
     height: unset;
@@ -232,9 +275,17 @@
     width: 60%;
 
     bottom: -15%;
+    position: relative;
+    margin: 1.5rem 0;
   }
 
-  .portfolio-home__col-2 svg {
-    margin-left: 0%;
+  .portfolio-home__col-2 img {
+    bottom: -15%;
+  }
+
+  .scroll-indicator {
+    transform: rotate(-90deg) translateY(-50%);
+    right: -42%;
+    top: 50%;
   }
 }
