@@ -13,14 +13,15 @@ const Services = () => {
     <section id="services" className={classes["section_padding"]}>
       <div className={classes["portfolio-services__col-1"]}>
         <SectionTitle
-          title="Services I Offer"
+          title="Services I"
+          bottomTitle="Offer"
           description="I always take responsibility for the direction, I look more broadly at
           the whole business. Figuring out solutions to complex problems and
           develop it, ughh! That's what I live for. Let's work together and be
           each other's important asset."
         />
 
-        <div className={classes["snowman-art"]} >
+        <div className={classes["snowman-art"]}>
           <img src={snowmanSvg} alt="" />
         </div>
       </div>

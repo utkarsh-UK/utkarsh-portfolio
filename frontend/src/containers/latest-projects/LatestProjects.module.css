@@ -25,8 +25,8 @@
 
 button.view-all {
   margin-left: auto;
-  width: 20%;
-  padding: 0.6rem 0.6rem;
+  width: 17%;
+  padding: 0.6rem 0.5rem;
   box-sizing: border-box;
 
   border: none;
@@ -35,7 +35,7 @@ button.view-all {
   color: #fff;
   font-family: var(--font-primary);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   cursor: pointer;
 
   display: flex;

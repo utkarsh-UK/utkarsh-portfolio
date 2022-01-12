@@ -155,8 +155,8 @@
   align-items: center;
   justify-content: space-evenly;
 
-  position: relative;
-  margin-top: 2rem;
+  position: absolute;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
 }

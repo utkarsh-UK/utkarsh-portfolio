@@ -46,7 +46,7 @@ const Contact = () => {
     <>
       <section id="contact" className={classes["section_padding"]}>
         <div className={classes["portfolio-contact__col-1"]}>
-          <h2>Let’s make something amazing together.</h2>
+          <h2>Let’s make something <br /> amazing together.</h2>
           <h2>
             Start by <em>saying hi</em>
           </h2>

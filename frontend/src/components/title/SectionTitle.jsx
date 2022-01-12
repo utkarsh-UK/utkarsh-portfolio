@@ -2,7 +2,12 @@ import React, { useEffect, useState } from "react";
 
 import classes from "./SectionTitle.module.css";
 
-const SectionTitle = ({ title, description, isFullPage = false }) => {
+const SectionTitle = ({
+  title,
+  bottomTitle,
+  description,
+  isFullPage = false,
+}) => {
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -20,7 +25,9 @@ const SectionTitle = ({ title, description, isFullPage = false }) => {
 
   return (
     <div className={classes["portfolio-section__container"]}>
-      <h2 style={{ width: isFullPage ? "10%" : "40%" }}>{title}</h2>
+      <h2>
+        {title} <br /> {bottomTitle}{" "}
+      </h2>
 
       <div
         className={classes["portfolio-section__description-box"]}

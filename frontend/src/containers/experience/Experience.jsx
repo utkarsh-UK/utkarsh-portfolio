@@ -1,19 +1,22 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 
-import {
-  ExperienceTile, SectionTitle
-} from "../../components/index";
-import { experience } from "../../content/index";
+import { ExperienceTile, SectionTitle, TechRow } from "../../components/index";
+import { experience, tech } from "../../content/index";
 import { handleLinkOpen } from "../../helpers/helpers";
+
 import {
-  firebaseIcon, flutterIcon, githubIcon, mysqlIcon, nodejsIcon,
-  reactIcon
+  nodejsIcon,
+  firebaseIcon,
+  flutterIcon,
+  githubIcon,
+  mysqlIcon,
+  reactIcon,
 } from "./icons";
 
 import classes from "./Experience.module.css";
 
-const SkillIconsContainer = ({ imageSource, url = "" }) => {
+export const SkillIconsContainer = ({ imageSource, url = "" }) => {
   return (
     <div
       className={classes["icon-container"]}
@@ -25,11 +28,24 @@ const SkillIconsContainer = ({ imageSource, url = "" }) => {
 };
 
 const Experience = () => {
+  const skillIconsArray = [
+    nodejsIcon,
+    reactIcon,
+    flutterIcon,
+    reactIcon,
+    reactIcon,
+    mysqlIcon,
+    firebaseIcon,
+    reactIcon,
+    githubIcon,
+  ];
+
   return (
     <section id="experience" className={classes["section_padding"]}>
       <div className={classes["portfolio-experience__col-1"]}>
         <SectionTitle
-          title="Skills & Experience"
+          title="Skills & "
+          bottomTitle="Experience"
           description="I always take responsibility for the direction, I look more broadly at
           the whole business. Figuring out solutions to complex problems and
           develop it, ughh! That's what I live for. Let's work together and be
@@ -43,84 +59,9 @@ const Experience = () => {
             rowSpacing={1}
             columnSpacing={{ xs: 1, sm: 2, md: 3 }}
           >
-            <Grid container item spacing={2}>
-              <Grid item xs={4}>
-                <div
-                  className={classes["portfolio-experience__skills-wrapper"]}
-                >
-                  <SkillIconsContainer imageSource={nodejsIcon} />
-                  <p>NodeJS </p>
-                </div>
-              </Grid>
-              <Grid item xs={4}>
-                <div
-                  className={classes["portfolio-experience__skills-wrapper"]}
-                >
-                  <SkillIconsContainer imageSource={reactIcon} />
-                  <p>ReactJS </p>
-                </div>
-              </Grid>
-              <Grid item xs={4}>
-                <div
-                  className={classes["portfolio-experience__skills-wrapper"]}
-                >
-                  <SkillIconsContainer imageSource={flutterIcon} />
-                  <p>Flutter </p>
-                </div>
-              </Grid>
-            </Grid>
-            <Grid container item spacing={2}>
-              <Grid item xs={4}>
-                <div
-                  className={classes["portfolio-experience__skills-wrapper"]}
-                >
-                  <SkillIconsContainer imageSource={reactIcon} />
-                  <p>Android </p>
-                </div>
-              </Grid>
-              <Grid item xs={4}>
-                <div
-                  className={classes["portfolio-experience__skills-wrapper"]}
-                >
-                  <SkillIconsContainer imageSource={reactIcon} />
-                  <p>MongoDB </p>
-                </div>
-              </Grid>
-              <Grid item xs={4}>
-                <div
-                  className={classes["portfolio-experience__skills-wrapper"]}
-                >
-                  <SkillIconsContainer imageSource={mysqlIcon} />
-                  <p>MySQL </p>
-                </div>
-              </Grid>
-            </Grid>
-            <Grid container item spacing={2}>
-              <Grid item xs={4}>
-                <div
-                  className={classes["portfolio-experience__skills-wrapper"]}
-                >
-                  <SkillIconsContainer imageSource={firebaseIcon} />
-                  <p>Firebase </p>
-                </div>
-              </Grid>
-              <Grid item xs={4}>
-                <div
-                  className={classes["portfolio-experience__skills-wrapper"]}
-                >
-                  <SkillIconsContainer imageSource={firebaseIcon} />
-                  <p>AdobeXD </p>
-                </div>
-              </Grid>
-              <Grid item xs={4}>
-                <div
-                  className={classes["portfolio-experience__skills-wrapper"]}
-                >
-                  <SkillIconsContainer imageSource={githubIcon} />
-                  <p>GitHub </p>
-                </div>
-              </Grid>
-            </Grid>
+            <TechRow skills={tech.slice(0, 3)} icons={skillIconsArray.slice(0, 3)}/>
+            <TechRow skills={tech.slice(3, 6)} icons={skillIconsArray.slice(3, 6)}/>
+            <TechRow skills={tech.slice(6, 9)} icons={skillIconsArray.slice(6, 9)}/>
           </Grid>
         </div>
       </div>

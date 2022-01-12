@@ -68,6 +68,48 @@
   height: 25px;
 }
 
+/* Test */
+.portfolio-experience__skill-item {
+  background: var(--color-secondary);
+
+  border-radius: 10px;
+  /* padding: 0.5rem 1rem 0.5rem; */
+  padding: 0.5rem 1rem 1rem;
+  box-sizing: border-box;
+}
+
+.portfolio-experience__skill-item .skill-item-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.portfolio-experience__skill-item .skill-item-title img {
+  width: 35px;
+  height: 35px;
+
+  margin-right: 0.5rem;
+}
+
+.portfolio-experience__skill-item .skill-item-title h6 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 0;
+
+  color: #ffffff;
+}
+
+.portfolio-experience__skill-item p {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  font-size: 0.6rem;
+  margin: 0;
+  padding: 0;
+
+  color: #ffffff;
+}
+
 /* ********************************** Sudo Selectors ********************************** */
 
 .portfolio-experience__skills-wrapper:hover::after {
