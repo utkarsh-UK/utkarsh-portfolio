@@ -179,6 +179,7 @@
   background: transparent;
   border: 2px solid var(--color-primary-font);
   cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .icon-container img {
@@ -220,9 +221,19 @@
   width: 8rem;
 }
 
+/* ********************************** Sudo Selectors ********************************** */
+
+.icon-container:hover {
+  transform: scale(1.1) translateY(-10px);
+}
+
 /* ********************************** Media Queries ********************************** */
 
 @media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
   .section_padding {
     flex-direction: column;
     padding: 0.6rem 2rem 0;

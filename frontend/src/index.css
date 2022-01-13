@@ -6,6 +6,8 @@
   --color-primary-font: #18171c;
   --color-secondary-font: #383838;
   --color-project-tile-border: #374785;
+  --color-nav-item-inactive: #5e5e5e;
+  --color-nav-item-active: #8873ef;
 
   --color-secondary-light: #8ecae6;
   --color-title-text: #7400b8;
@@ -33,6 +35,8 @@ body {
   box-sizing: border-box;
 
   font-family: var(--font-primary);
+
+  scroll-behavior: smooth;
 }
 
 ::-moz-selection {
