@@ -9,3 +9,4 @@ export { default as IconContainer } from "./icon-container/IconContainer";
 export { default as AppIcon } from "./app-icon/AppIcon";
 export { default as TechRow } from "./tech-row/TechRow";
 export { default as NavBar } from "./navbar/NavBar";
+export { default as ProjectItem } from "./project-item/ProjectItem";

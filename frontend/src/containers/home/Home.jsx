@@ -25,7 +25,16 @@ const SocialIconsContainer = ({ imageSource, url = "" }) => {
 const Home = () => {
   return (
     <header id="home">
-      <NavBar />
+      <NavBar
+        navItems={["Home", "Services", "Experience", "Projects", "Contact"]}
+        navHrefs={[
+          "#home",
+          "#services",
+          "#experience",
+          "#projects",
+          "#contact",
+        ]}
+      />
       <div className={classes["section_padding"]}>
         <div className={classes["portfolio-home__col-1"]}>
           <div className={classes["semi-circle-container"]}></div>

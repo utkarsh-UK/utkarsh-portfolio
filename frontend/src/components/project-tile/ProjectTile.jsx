@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { IconContainer, LongArrow } from "../../components/index";
 
@@ -15,7 +16,9 @@ const ProjectTile = ({ project, projectImage }) => {
           <p> {project.tech} </p>
         </div>
 
-        <IconContainer icon={<LongArrow />} />
+        <Link to={"/projects"} style={{ textDecoration: "none" }}>
+          <IconContainer icon={<LongArrow />} />
+        </Link>
       </div>
 
       <div className={classes["portfolio-project-tile_image-box"]}>

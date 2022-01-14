@@ -1,0 +1,40 @@
+.project-item {
+  width: 70%;
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  max-height: 250px;
+
+  object-fit: cover;
+  border: 1px solid var(--color-secondary-font);
+  border-radius: 8px;
+}
+
+.project-name,
+.project-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-item p {
+  font-family: var(--font-primary);
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 1rem;
+  color: var(--color-primary-font);
+}
+
+.project-type > * {
+  margin-right: 0.5rem;
+}
+
+/* ********************************** Media Queries ********************************** */
+
+@media screen and (max-width: 768px) {
+  .project-item {
+    width: 80%;
+  }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { AppIcon, ProjectTile, SectionTitle } from "../../components/index";
 
@@ -25,9 +26,11 @@ const LatestProjects = () => {
         ))}
       </div>
 
-      <button className={classes["view-all"]}>
-        <AppIcon /> View All Projects
-      </button>
+      <Link to="/projects" style={{ textDecoration: "none" }}>
+        <button className={classes["view-all"]}>
+          <AppIcon /> View All Projects
+        </button>
+      </Link>
     </section>
   );
 };
