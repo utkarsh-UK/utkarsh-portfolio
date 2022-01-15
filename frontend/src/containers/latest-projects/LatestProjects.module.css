@@ -51,7 +51,7 @@ button.view-all svg {
 @media screen and (max-width: 768px) {
   .section_padding {
     flex-direction: column;
-    padding: 0.6rem 2rem;
+    padding: 2rem 2rem 0.6rem;
 
     height: unset;
   }

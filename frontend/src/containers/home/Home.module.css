@@ -179,12 +179,23 @@
   background: transparent;
   border: 2px solid var(--color-primary-font);
   cursor: pointer;
-  transition: transform 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  transform-origin: center right;
 }
 
 .icon-container img {
   width: 25px;
   height: 25px;
+}
+
+.icon-container p {
+  display: none;
+
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 0.8rem;
+
+  color: var(--color-primary-font);
 }
 
 .scroll-indicator {
@@ -224,7 +235,16 @@
 /* ********************************** Sudo Selectors ********************************** */
 
 .icon-container:hover {
-  transform: scale(1.1) translateY(-10px);
+  width: max-content;
+
+  padding: 0 1.2rem;
+  border-radius: 30px;
+}
+
+.icon-container:hover p {
+  display: inline-block;
+
+  margin-left: 0.3rem;
 }
 
 /* ********************************** Media Queries ********************************** */
@@ -283,7 +303,7 @@
   }
 
   .portfolio-home__social-links {
-    width: 60%;
+    width: 75%;
 
     bottom: -15%;
     position: relative;
@@ -296,7 +316,21 @@
 
   .scroll-indicator {
     transform: rotate(-90deg) translateY(-50%);
-    right: -42%;
-    top: 50%;
+    right: -15%;
+    top: 60%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .scroll-indicator {
+    right: -40%;
+    top: 45%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .scroll-indicator {
+    right: -50%;
+    top: 45%;
   }
 }

@@ -18,6 +18,10 @@
   justify-content: space-between;
 }
 
+.portfolio-project-tile-content {
+  margin: 0.3rem 0;
+}
+
 .portfolio-project-tile-content h6 {
   margin: 0;
 

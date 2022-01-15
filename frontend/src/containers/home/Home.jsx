@@ -11,13 +11,14 @@ import profileBackgroundSvg from "../../icons/profile-background.svg";
 
 import classes from "./Home.module.css";
 
-const SocialIconsContainer = ({ imageSource, url = "" }) => {
+const SocialIconsContainer = ({ handleName, imageSource, url = "" }) => {
   return (
     <div
       className={classes["icon-container"]}
       onClick={() => handleLinkOpen(url)}
     >
       <img src={imageSource} alt="" />
+      <p> {handleName} </p>
     </div>
   );
 };
@@ -67,14 +68,17 @@ const Home = () => {
             <SocialIconsContainer
               imageSource={linkedinImage}
               url="https://www.linkedin.com/in/utkarsh-kore-175080174/"
+              handleName="Linkedin"
             />
             <SocialIconsContainer
               imageSource={githubImage}
               url="https://github.com/utkarsh-UK"
+              handleName="Gihub"
             />
             <SocialIconsContainer
               imageSource={instagramImage}
               url="https://www.instagram.com/_utkarsh_kore_uk/"
+              handleName="Instagram"
             />
           </div>
         </div>

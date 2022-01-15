@@ -1,10 +1,17 @@
 import React from "react";
 
-import { SkillIconsContainer } from "../../containers/experience/Experience";
-import sacredImage from "../../images/sacred.jpg";
 import { nodejsIcon } from "../../containers/experience/icons";
+import sacredImage from "../../images/sacred.jpg";
 
 import classes from "./ProjectItem.module.css";
+
+const TechIconsContainer = ({ imageSource, url = "" }) => {
+  return (
+    <div className={classes["tech-container"]}>
+      <img src={imageSource} alt="" />
+    </div>
+  );
+};
 
 const ProjectItem = () => {
   return (
@@ -14,8 +21,8 @@ const ProjectItem = () => {
       <div className={classes["project-name"]}>
         <h3>Sacred Groves</h3>
         <div className={classes["project-type"]}>
-          <SkillIconsContainer imageSource={nodejsIcon} url="" />
-          <SkillIconsContainer imageSource={nodejsIcon} url="" />
+          <TechIconsContainer imageSource={nodejsIcon} url="" />
+          <TechIconsContainer imageSource={nodejsIcon} url="" />
         </div>
       </div>
 

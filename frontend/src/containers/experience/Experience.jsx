@@ -12,6 +12,9 @@ import {
   githubIcon,
   mysqlIcon,
   reactIcon,
+  adobeIcon,
+  androidIcon,
+  mongoIcon,
 } from "./icons";
 
 import classes from "./Experience.module.css";
@@ -29,15 +32,15 @@ export const SkillIconsContainer = ({ imageSource, url = "" }) => {
 
 const Experience = () => {
   const skillIconsArray = [
+    flutterIcon,
+    androidIcon,
     nodejsIcon,
     reactIcon,
-    flutterIcon,
-    reactIcon,
-    reactIcon,
+    mongoIcon,
     mysqlIcon,
-    firebaseIcon,
-    reactIcon,
     githubIcon,
+    firebaseIcon,
+    adobeIcon,
   ];
 
   return (
@@ -59,9 +62,18 @@ const Experience = () => {
             rowSpacing={1}
             columnSpacing={{ xs: 1, sm: 2, md: 3 }}
           >
-            <TechRow skills={tech.slice(0, 3)} icons={skillIconsArray.slice(0, 3)}/>
-            <TechRow skills={tech.slice(3, 6)} icons={skillIconsArray.slice(3, 6)}/>
-            <TechRow skills={tech.slice(6, 9)} icons={skillIconsArray.slice(6, 9)}/>
+            <TechRow
+              skills={tech.slice(0, 3)}
+              icons={skillIconsArray.slice(0, 3)}
+            />
+            <TechRow
+              skills={tech.slice(3, 6)}
+              icons={skillIconsArray.slice(3, 6)}
+            />
+            <TechRow
+              skills={tech.slice(6, 9)}
+              icons={skillIconsArray.slice(6, 9)}
+            />
           </Grid>
         </div>
       </div>

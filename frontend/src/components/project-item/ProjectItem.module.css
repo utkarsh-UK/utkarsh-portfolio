@@ -31,10 +31,27 @@
   margin-right: 0.5rem;
 }
 
+.tech-container {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-secondary);
+  cursor: pointer;
+}
+
+.tech-container img {
+  width: 20px;
+  height: 20px;
+}
+
 /* ********************************** Media Queries ********************************** */
 
 @media screen and (max-width: 768px) {
   .project-item {
-    width: 80%;
+    width: 90%;
   }
 }
