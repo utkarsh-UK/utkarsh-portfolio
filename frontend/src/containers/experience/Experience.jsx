@@ -36,8 +36,8 @@ const Experience = () => {
     androidIcon,
     nodejsIcon,
     reactIcon,
-    mongoIcon,
     mysqlIcon,
+    mongoIcon,
     githubIcon,
     firebaseIcon,
     adobeIcon,
@@ -49,10 +49,7 @@ const Experience = () => {
         <SectionTitle
           title="Skills & "
           bottomTitle="Experience"
-          description="I always take responsibility for the direction, I look more broadly at
-          the whole business. Figuring out solutions to complex problems and
-          develop it, ughh! That's what I live for. Let's work together and be
-          each other's important asset."
+          description="To my fortune, had the opportunity to intern into various organizations with great seniors to guide on us. I have experienced being a developer as well as being on the other side as production support thereby imrpoving my appraoch towards development."
         />
 
         <div className={classes["portofolio-experience__skills-grid"]}>

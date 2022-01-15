@@ -15,10 +15,7 @@ const Services = () => {
         <SectionTitle
           title="Services I"
           bottomTitle="Offer"
-          description="I always take responsibility for the direction, I look more broadly at
-          the whole business. Figuring out solutions to complex problems and
-          develop it, ughh! That's what I live for. Let's work together and be
-          each other's important asset."
+          description="Be it mobile apps or websites, I've got enough of the required skills to build your product through rigorous plans and timely implementation. Explore through my projects for real world examples."
         />
 
         <div className={classes["snowman-art"]}>

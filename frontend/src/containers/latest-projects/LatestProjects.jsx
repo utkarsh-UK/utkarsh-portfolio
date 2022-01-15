@@ -16,7 +16,7 @@ const LatestProjects = () => {
       <SectionTitle
         title="Key "
         bottomTitle="Projects"
-        description="I always take responsibility for the direction, I look more broadly at the whole business. Figuring out solutions to complex problems and develop it, ughh! That's what I live for. Let's work together and be each other's important asset."
+        description="I have always believed in doing rather than talking. I have been fortunate to work on some interesting projects or develop some of my own to apply and nurture my skills."
         isFullPage={true}
       />
 
