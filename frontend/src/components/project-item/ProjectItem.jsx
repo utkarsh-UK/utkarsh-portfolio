@@ -13,29 +13,21 @@ const TechIconsContainer = ({ imageSource, url = "" }) => {
   );
 };
 
-const ProjectItem = () => {
+const ProjectItem = ({ project }) => {
+  console.log(project);
   return (
     <div className={classes["project-item"]}>
       <img className={classes["project-image"]} src={sacredImage} alt="" />
 
       <div className={classes["project-name"]}>
-        <h3>Sacred Groves</h3>
+        <h3> {project.title} </h3>
         <div className={classes["project-type"]}>
           <TechIconsContainer imageSource={nodejsIcon} url="" />
           <TechIconsContainer imageSource={nodejsIcon} url="" />
         </div>
       </div>
 
-      <p>
-        Lorem ipsum doler itso. Lorem ipsum doler itso. Lorem ipsum doler itso.
-        Lorem ipsum doler itso. Lorem ipsum doler itso. Lorem ipsum doler itso.
-        Lorem ipsum doler itso. Lorem ipsum doler itso. Lorem ipsum doler
-        itso.Lorem ipsum doler itso.Lorem ipsum doler itso. Lorem ipsum doler
-        itso. Lorem ipsum doler itso. Lorem ipsum doler itso.Lorem ipsum doler
-        itso.Lorem ipsum doler itso. Lorem ipsum doler itso. Lorem ipsum doler
-        itso. Lorem ipsum doler itso.Lorem ipsum doler itso.Lorem ipsum doler
-        itso.
-      </p>
+      <p>{project.description}</p>
     </div>
   );
 };

@@ -76,6 +76,7 @@ const TechRow = ({ skills, icons }) => {
           title={skill.title}
           description={skill.content}
           index={i}
+          key={i}
           icon={icons[i]}
           onHovered={onHover}
           onExited={onExit}

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { AppIcon, ProjectTile, SectionTitle } from "../../components/index";
 
-import { projects } from "../../content/index";
+import { keyProjects } from "../../content/index";
 import { annadataImage, persuitImage, sacredImage } from "./images";
 
 import classes from "./LatestProjects.module.css";
@@ -21,7 +21,7 @@ const LatestProjects = () => {
       />
 
       <div className={classes["portfolio-latest-projects__container"]}>
-        {projects.map((proj, i) => (
+        {keyProjects.map((proj, i) => (
           <ProjectTile project={proj} key={i} projectImage={projectImages[i]} />
         ))}
       </div>

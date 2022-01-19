@@ -62,14 +62,17 @@ const Experience = () => {
             <TechRow
               skills={tech.slice(0, 3)}
               icons={skillIconsArray.slice(0, 3)}
+              key={0}
             />
             <TechRow
               skills={tech.slice(3, 6)}
               icons={skillIconsArray.slice(3, 6)}
+              key={1}
             />
             <TechRow
               skills={tech.slice(6, 9)}
               icons={skillIconsArray.slice(6, 9)}
+              key={2}
             />
           </Grid>
         </div>

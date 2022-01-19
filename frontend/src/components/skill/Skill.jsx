@@ -16,7 +16,7 @@ const Skill = ({ title, number }) => {
           <div className={classes["portfolio-services__skill-explore"]}>
             <p>Explore</p>
 
-            <IconContainer icon={<LongArrow />} />
+            <IconContainer url="/projects" icon={<LongArrow />} />
           </div>
         </div>
       </div>
