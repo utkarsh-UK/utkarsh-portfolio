@@ -1,7 +1,6 @@
 import React from "react";
 
 import { nodejsIcon } from "../../containers/experience/icons";
-import sacredImage from "../../images/sacred.jpg";
 
 import classes from "./ProjectItem.module.css";
 
@@ -13,11 +12,10 @@ const TechIconsContainer = ({ imageSource, url = "" }) => {
   );
 };
 
-const ProjectItem = ({ project }) => {
-  console.log(project);
+const ProjectItem = ({ project, projectImage }) => {
   return (
     <div className={classes["project-item"]}>
-      <img className={classes["project-image"]} src={sacredImage} alt="" />
+      <img className={classes["project-image"]} src={projectImage} alt="" />
 
       <div className={classes["project-name"]}>
         <h3> {project.title} </h3>

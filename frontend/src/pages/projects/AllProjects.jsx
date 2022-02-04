@@ -3,6 +3,20 @@ import React from "react";
 import { NavBar, ProjectItem } from "../../components";
 import { Footer } from "../../containers";
 import {
+  sacredProject,
+  reddooProject,
+  annadataProject,
+  dojoProject,
+  newsAppProject,
+  persuitProject,
+  flutterWorkshopProject,
+  reddooDesignProject,
+  blissDesignProject,
+  newsDesignProject,
+  cpWorkshopProject,
+  studentTeacherProject,
+} from "./images";
+import {
   mobileProjects,
   webProjects,
   designProjects,
@@ -12,6 +26,36 @@ import {
 import classes from "./AllProjects.module.css";
 
 const AllProjects = () => {
+  const mobileProjectImages = [
+    sacredProject,
+    reddooProject,
+    annadataProject,
+    dojoProject,
+    newsAppProject,
+  ];
+
+  const webProjectImages = [
+    annadataProject,
+    persuitProject,
+    annadataProject,
+    dojoProject,
+    newsAppProject,
+  ];
+
+  const designProjectImages = [
+    reddooDesignProject,
+    blissDesignProject,
+    newsDesignProject,
+    dojoProject,
+    newsAppProject,
+  ];
+
+  const mentoringImages = [
+    flutterWorkshopProject,
+    cpWorkshopProject,
+    studentTeacherProject,
+  ];
+
   return (
     <section id="all-projects">
       <NavBar
@@ -26,7 +70,11 @@ const AllProjects = () => {
 
         <div className={classes["portfolio-projects__project-grid"]}>
           {mobileProjects.map((proj, index) => (
-            <ProjectItem project={proj} key={index} />
+            <ProjectItem
+              project={proj}
+              key={index}
+              projectImage={mobileProjectImages[index]}
+            />
           ))}
         </div>
 
@@ -38,7 +86,11 @@ const AllProjects = () => {
 
         <div className={classes["portfolio-projects__project-grid"]}>
           {webProjects.map((proj, index) => (
-            <ProjectItem project={proj} key={index} />
+            <ProjectItem
+              project={proj}
+              key={index}
+              projectImage={webProjectImages[index]}
+            />
           ))}
         </div>
 
@@ -48,7 +100,11 @@ const AllProjects = () => {
 
         <div className={classes["portfolio-projects__project-grid"]}>
           {designProjects.map((proj, index) => (
-            <ProjectItem project={proj} key={index} />
+            <ProjectItem
+              project={proj}
+              key={index}
+              projectImage={designProjectImages[index]}
+            />
           ))}
         </div>
 
@@ -60,7 +116,11 @@ const AllProjects = () => {
 
         <div className={classes["portfolio-projects__project-grid"]}>
           {mentoringProjects.map((proj, index) => (
-            <ProjectItem project={proj} key={index} />
+            <ProjectItem
+              project={proj}
+              key={index}
+              projectImage={mentoringImages[index]}
+            />
           ))}
         </div>
       </div>

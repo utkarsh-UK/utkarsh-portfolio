@@ -1,0 +1,34 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  color: #fff;
+}
+
+h1,
+h3 {
+  font-size: 3rem;
+  font-weight: bold;
+
+  margin: 1rem 0;
+}
+
+a {
+  color: #fff;
+}
+
+.bg-pan {
+  background: #8873ef;
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 40%;
+}

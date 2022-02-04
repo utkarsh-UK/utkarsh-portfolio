@@ -1,0 +1,12 @@
+export {default as sacredProject } from '../../images/sacred.jpg';
+export {default as reddooProject } from '../../images/reddoo.png';
+export {default as dojoProject } from '../../images/dojo.png';
+export {default as newsAppProject } from '../../images/news-app.png';
+export {default as annadataProject } from '../../images/annadata-mockup.png';
+export {default as persuitProject } from '../../images/persuit.png';
+export {default as reddooDesignProject } from '../../images/reddoo-design.png';
+export {default as blissDesignProject } from '../../images/bliss-design.png';
+export {default as newsDesignProject } from '../../images/news-design.png';
+export {default as flutterWorkshopProject } from '../../images/flutter-workshop.jpg';
+export {default as cpWorkshopProject } from '../../images/cp-workshop.jpg';
+export {default as studentTeacherProject } from '../../images/student-teacher.jpg';
