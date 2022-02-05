@@ -5,10 +5,14 @@ import { Footer } from "../../containers";
 import {
   sacredProject,
   reddooProject,
+  fiscalProject,
   annadataProject,
+  cryptoProject,
   dojoProject,
   newsAppProject,
   persuitProject,
+  noteProject,
+  frontendMentorProject,
   flutterWorkshopProject,
   reddooDesignProject,
   blissDesignProject,
@@ -29,7 +33,7 @@ const AllProjects = () => {
   const mobileProjectImages = [
     sacredProject,
     reddooProject,
-    annadataProject,
+    fiscalProject,
     dojoProject,
     newsAppProject,
   ];
@@ -37,9 +41,9 @@ const AllProjects = () => {
   const webProjectImages = [
     annadataProject,
     persuitProject,
-    annadataProject,
-    dojoProject,
-    newsAppProject,
+    cryptoProject,
+    noteProject,
+    frontendMentorProject,
   ];
 
   const designProjectImages = [

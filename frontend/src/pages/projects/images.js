@@ -1,9 +1,13 @@
 export {default as sacredProject } from '../../images/sacred.jpg';
 export {default as reddooProject } from '../../images/reddoo.png';
+export {default as fiscalProject } from '../../images/fiscal.png';
 export {default as dojoProject } from '../../images/dojo.png';
 export {default as newsAppProject } from '../../images/news-app.png';
 export {default as annadataProject } from '../../images/annadata-mockup.png';
+export {default as cryptoProject } from '../../images/crypto.png';
 export {default as persuitProject } from '../../images/persuit.png';
+export {default as noteProject } from '../../images/note.png';
+export {default as frontendMentorProject } from '../../images/frontend-mentor.png';
 export {default as reddooDesignProject } from '../../images/reddoo-design.png';
 export {default as blissDesignProject } from '../../images/bliss-design.png';
 export {default as newsDesignProject } from '../../images/news-design.png';

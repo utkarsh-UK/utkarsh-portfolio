@@ -4,6 +4,7 @@ import { NavBar } from "../../components";
 import { handleLinkOpen } from "../../helpers/helpers";
 
 import circleSvg from "../../icons/circle.svg";
+import profilePhoto from "../../images/profile-image.jpg";
 import githubImage from "../../icons/github-black.png";
 import instagramImage from "../../icons/instagram-black.png";
 import linkedinImage from "../../icons/linkedin-black.png";
@@ -84,7 +85,18 @@ const Home = () => {
         </div>
 
         <div className={classes["portfolio-home__col-2"]}>
-          <img src={profileBackgroundSvg} alt="" />
+          <div className={classes["portfolio-home__profile-image"]}>
+            {/* <img
+              src={profileBackgroundSvg}
+              alt=""
+              className={classes["profile-border"]}
+            /> */}
+            <img
+              src={profilePhoto}
+              alt="Utkarsh Kore"
+              className={classes["profile-photo"]}
+            />
+          </div>
 
           <div className={classes["scroll-indicator"]}>
             <p>Scroll Down </p>
