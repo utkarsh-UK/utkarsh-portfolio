@@ -16,7 +16,7 @@
   justify-content: flex-start;
   align-items: flex-start;
 
-  padding: 0 0 0 1.5rem;
+  padding: 0 0 0 1rem;
 }
 
 .portfolio-services__skill-content .skill-number {
@@ -33,15 +33,18 @@
 }
 
 .portfolio-services__skill-title-wrapper h4 {
-  width: 30%;
-  margin: 1rem 0 0;
+  margin: 1rem 0 0.6rem;
 
   font-family: var(--font-primary);
   font-weight: 700;
-  font-size: 1.3rem;
-  line-height: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1rem;
 
   color: var(--color-primary-font);
+}
+
+.portfolio-services__skill-title-wrapper h4:last-of-type {
+  margin: 0;
 }
 
 .portfolio-services__skill-explore {
@@ -52,7 +55,7 @@
 
 .portfolio-services__skill-explore p {
   font-weight: 400;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
 
   color: var(--color-primary-font);
 }

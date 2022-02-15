@@ -21,7 +21,7 @@ const SectionTitle = ({
   };
 
   const descBoxWidth =
-    width <= 768 && isFullPage ? "75%" : isFullPage ? "35%" : "75%";
+    width <= 768 && isFullPage ? "75%" : isFullPage ? "35%" : "90%";
 
   return (
     <div className={classes["portfolio-section__container"]}>

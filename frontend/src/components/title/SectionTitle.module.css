@@ -54,3 +54,37 @@
     width: 95%;
   }
 }
+
+@media screen and (min-width: 769px) {
+  .portfolio-section__container h2 {
+    width: 70%;
+    margin: 0 0 1rem;
+
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  .portfolio-section__description-box {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .portfolio-section__container h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .portfolio-section__description-box {
+    width: 90%;
+  }
+
+  .portfolio-section__description-box hr {
+    border-top: 3px solid var(--color-secondary-font);
+  }
+
+  .portfolio-section__description-box p {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+}

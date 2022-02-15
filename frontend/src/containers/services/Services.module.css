@@ -29,8 +29,8 @@
 }
 
 .snowman-art img {
-  width: 60%;
-  height: 60%;
+  width: 50vw;
+  height: 65vh;
 
   bottom: 0;
 }
@@ -51,5 +51,23 @@
 
   .snowman-art {
     display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .snowman-art img {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section_padding {
+    height: unset;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section_padding {
+    height: 100vh;
   }
 }

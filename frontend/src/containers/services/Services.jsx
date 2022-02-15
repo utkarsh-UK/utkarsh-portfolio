@@ -25,7 +25,7 @@ const Services = () => {
 
       <div className={classes["portfolio-services__col-2"]}>
         {skills.map((s, i) => (
-          <Skill title={s.skill} number={padZero(i + 1, 2)} key={i} />
+          <Skill mainTitle={s.skillMainTitle} subTitle={s.skillSubTitle} number={padZero(i + 1, 2)} key={i} />
         ))}
       </div>
     </section>
