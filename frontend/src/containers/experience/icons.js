@@ -1,5 +1,6 @@
 export {default as flutterIcon} from '../../icons/flutter.png';
 export {default as androidIcon} from '../../icons/android.png';
+export {default as iosIcon} from '../../icons/ios.png';
 export {default as nodejsIcon} from '../../icons/nodejs.png';
 export {default as reactIcon} from '../../icons/react.png';
 export {default as mongoIcon} from '../../icons/mongo.png';

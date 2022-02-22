@@ -9,6 +9,7 @@ import githubImage from "../../icons/github-black.png";
 import instagramImage from "../../icons/instagram-black.png";
 import linkedinImage from "../../icons/linkedin-black.png";
 import profileBackgroundSvg from "../../icons/profile-background.svg";
+import semiCircleImage from "../../images/semi-circle.png";
 
 import classes from "./Home.module.css";
 

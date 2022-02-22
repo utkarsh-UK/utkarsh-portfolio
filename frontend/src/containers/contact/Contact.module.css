@@ -43,6 +43,10 @@
   color: var(--color-secondary);
 }
 
+.portfolio-contact__col-1 a {
+  text-decoration: none;
+}
+
 .sub-title {
   font-family: var(--font-headings);
   font-weight: 400;
@@ -117,13 +121,17 @@
 
   .portfolio-contact__col-1 h2 {
     width: 90%;
-
+    
     font-size: 1.8rem;
     line-height: 2.2rem;
   }
-  
 
   .portfolio-contact__col-2 {
     margin-top: 1.5rem;
+  }
+
+  .portfolio-contact__tile-wrapper p {
+    width: 70%;
+    word-wrap: break-word;
   }
 }

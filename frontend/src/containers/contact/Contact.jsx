@@ -46,9 +46,18 @@ const Contact = () => {
     <>
       <section id="contact" className={classes["section_padding"]}>
         <div className={classes["portfolio-contact__col-1"]}>
-          <h2>Let’s make something <br /> amazing together.</h2>
           <h2>
-            Start by <em>saying hi</em>
+            Let’s make something <br /> amazing together.
+          </h2>
+          <h2>
+            Start by{" "}
+            <a
+              href="https://www.linkedin.com/in/utkarsh-kore-175080174/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <em>saying hi</em>
+            </a>
           </h2>
         </div>
 

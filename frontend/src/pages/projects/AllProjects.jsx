@@ -3,63 +3,63 @@ import React from "react";
 import { NavBar, ProjectItem } from "../../components";
 import { Footer } from "../../containers";
 import {
-  sacredProject,
-  reddooProject,
-  fiscalProject,
-  annadataProject,
-  cryptoProject,
-  dojoProject,
-  newsAppProject,
-  persuitProject,
-  noteProject,
-  frontendMentorProject,
-  flutterWorkshopProject,
-  reddooDesignProject,
-  blissDesignProject,
-  newsDesignProject,
-  cpWorkshopProject,
-  studentTeacherProject,
-} from "./images";
-import {
-  mobileProjects,
-  webProjects,
   designProjects,
   mentoringProjects,
+  mobileProjects,
+  webProjects,
 } from "../../content/projects";
+import {
+  annadataProject,
+  blissDesignProject,
+  cpWorkshopProject,
+  cryptoProject,
+  dojoProject,
+  fiscalProject,
+  flutterWorkshopProject,
+  frontendMentorProject,
+  newsAppProject,
+  newsDesignProject,
+  noteProject,
+  persuitProject,
+  reddooDesignProject,
+  reddooProject,
+  sacredProject,
+  studentTeacherProject,
+} from "./images";
 
 import classes from "./AllProjects.module.css";
 
+const mobileProjectImages = [
+  sacredProject,
+  reddooProject,
+  fiscalProject,
+  dojoProject,
+  newsAppProject,
+];
+
+const webProjectImages = [
+  annadataProject,
+  persuitProject,
+  cryptoProject,
+  noteProject,
+  frontendMentorProject,
+];
+
+const designProjectImages = [
+  reddooDesignProject,
+  blissDesignProject,
+  newsDesignProject,
+  dojoProject,
+  newsAppProject,
+];
+
+const mentoringImages = [
+  flutterWorkshopProject,
+  cpWorkshopProject,
+  studentTeacherProject,
+];
+
 const AllProjects = () => {
-  const mobileProjectImages = [
-    sacredProject,
-    reddooProject,
-    fiscalProject,
-    dojoProject,
-    newsAppProject,
-  ];
-
-  const webProjectImages = [
-    annadataProject,
-    persuitProject,
-    cryptoProject,
-    noteProject,
-    frontendMentorProject,
-  ];
-
-  const designProjectImages = [
-    reddooDesignProject,
-    blissDesignProject,
-    newsDesignProject,
-    dojoProject,
-    newsAppProject,
-  ];
-
-  const mentoringImages = [
-    flutterWorkshopProject,
-    cpWorkshopProject,
-    studentTeacherProject,
-  ];
-
   return (
     <section id="all-projects">
       <NavBar

@@ -27,8 +27,8 @@
 }
 
 .semi-circle-container {
-  width: 18.75rem;
-  height: 18.75rem;
+  width: 45%;
+  height: 60%;
   border: 20px solid #fcda68;
   border-radius: 50%;
 
@@ -290,10 +290,6 @@
     height: unset;
   }
 
-  .semi-circle-container {
-    left: -100%;
-  }
-
   .portfolio-home__intro-wrapper {
     flex-direction: column;
 
@@ -362,6 +358,11 @@
 }
 
 @media screen and (max-width: 320px) {
+  .semi-circle-container {
+    width: 50%;
+    height: 42%;
+  }
+
   .scroll-indicator {
     right: -55%;
     top: 30%;
