@@ -8,8 +8,6 @@ import profilePhoto from "../../images/profile-image.jpg";
 import githubImage from "../../icons/github-black.png";
 import instagramImage from "../../icons/instagram-black.png";
 import linkedinImage from "../../icons/linkedin-black.png";
-import profileBackgroundSvg from "../../icons/profile-background.svg";
-import semiCircleImage from "../../images/semi-circle.png";
 
 import classes from "./Home.module.css";
 
@@ -79,7 +77,7 @@ const Home = () => {
             />
             <SocialIconsContainer
               imageSource={instagramImage}
-              url="https://www.instagram.com/_utkarsh_kore_uk/"
+              url="https://www.instagram.com/_uk.utkarsh/"
               handleName="Instagram"
             />
           </div>

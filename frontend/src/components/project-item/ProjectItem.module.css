@@ -29,8 +29,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   pointer-events: none;
+  padding-top: auto;
+  padding-bottom: 0.5rem;
 
   background: var(--color-secondary);
   border-radius: 0 8px 8px 0;
@@ -71,6 +73,7 @@
 
 .tool-container {
   background: var(--color-primary);
+  margin-top: 1rem;
 }
 
 .tech-container img,

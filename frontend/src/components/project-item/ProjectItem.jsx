@@ -20,9 +20,11 @@ const techIcons = [
 
 const TechIconsContainer = ({ imageSource, url = "" }) => {
   return (
-    <div className={classes["tech-container"]}>
-      <img src={imageSource} alt="" />
-    </div>
+    <a href={url} target="_blank" rel="noreferrer">
+      <div className={classes["tech-container"]}>
+        <img src={imageSource} alt="" />
+      </div>
+    </a>
   );
 };
 
@@ -50,7 +52,11 @@ const ProjectItem = ({ project, projectImage }) => {
         <h3> {project.title} </h3>
         <div className={classes["project-type"]}>
           {project.tech.map((t, i) => (
-            <TechIconsContainer imageSource={techIcons[t - 1]} url="" key={i} />
+            <TechIconsContainer
+              imageSource={techIcons[t - 1]}
+              url={project.links[i]}
+              key={i}
+            />
           ))}
         </div>
       </div>
