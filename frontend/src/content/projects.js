@@ -18,7 +18,7 @@ const keyProjects = [
 
 export const mobileProjects = [
   {
-    title: "Sacred Groves",
+    title: "Sacred Changed",
     tech: ["1", "2", "4"],
     links: [
       "https://play.google.com/store/apps/details?id=com.outshade.sacredgroves",
