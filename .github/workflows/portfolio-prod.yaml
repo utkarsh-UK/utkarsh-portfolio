@@ -8,8 +8,21 @@ jobs:
     name: FTP-Deploy-Action-Prod
     runs-on: ubuntu-latest
     steps:
-    - name: Get latest prod code
+    - name: Checkout code
       uses: actions/checkout@v2
+
+    - name: Install Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.x
+
+    - name: Install NPM packages
+      working-directory: ./frontend
+      run: npm ci
+
+    - name: Build project
+      working-directory: ./frontend
+      run: npm run build
 
     - name: FTP-Deploy-Action-Prod
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
@@ -17,4 +30,5 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./frontend/build/
         server-dir: public_html/
