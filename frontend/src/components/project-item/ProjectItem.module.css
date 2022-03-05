@@ -13,7 +13,7 @@
 
   object-fit: cover;
   border: 1px solid var(--color-secondary-font);
-  border-right: none;
+  /* border-right: none; */
   border-radius: 8px;
   cursor: pointer;
 }
@@ -83,6 +83,10 @@
 }
 
 /* ********************************** Sudo Selectors ********************************** */
+
+.project-image:hover {
+  border-right: none;
+}
 
 .project-image:hover + .tools-container {
   width: 50px;

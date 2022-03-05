@@ -1,12 +1,3 @@
-export const projectMapping = {
-  1: "android",
-  2: "ios",
-  3: "flutter",
-  4: "web",
-  5: "ui",
-  6: "others",
-};
-
 const keyProjects = [
   {
     title: "Persuit",
@@ -47,7 +38,7 @@ export const mobileProjects = [
     ],
     tools: ["Flutter", "Firebase", "Google APIs", "Razorpay", "AdobeXD"],
     description:
-      "Reddoo is a modern age restaurant based in Hyderabad. Reddoo offers different catering services through it's online platforms off which the application was made with Flutter and Firebase. Led the project single handedly as a Full Stack Developer with designing the application to deploying the end product to play stores.",
+      "Reddoo is a modern age restaurant based in Hyderabad. Reddoo offers different catering services through it's online platforms off which the application was made with Flutter and Firebase. Led the project single handedly as a Full Stack Mobile Developer with designing the application to deploying the end product to play stores.",
   },
   {
     title: "Fiscal",
@@ -90,7 +81,7 @@ export const webProjects = [
   {
     title: "Persuit",
     tech: ["4"],
-    links: [""],
+    links: ["http://persuit.utkarshkore.me/"],
     tools: ["ReactJS", "NodeJS", "React Router"],
     description:
       "Persuit drives it's motivation from Zerodha's Kite Trading platform. Persuit is a practice clone for Kite with exact replica of the UI and design aspects built with ReactJS. Implemented stocks listing, buy/sell window, Holdings and other such important aspects with hard coded data.",
@@ -106,15 +97,15 @@ export const webProjects = [
   {
     title: "Note Taking",
     tech: ["4"],
-    links: [""],
+    links: ["http://note-taking.utkarshkore.me/"],
     tools: ["ReactJS", "NodeJS", "React Router"],
     description:
       "Note Taking is a simple MERN stack website for storing notes in Mongo DB. It has an intuitive design on the front supported with strong Express built API.",
   },
   {
     title: "FrontendMentor Challenges",
-    tech: ["4", "5"],
-    links: ["", ""],
+    tech: ["4"],
+    links: ["http://frontendmentor.utkarshkore.me/"],
     tools: ["HTML/CSS", "Javascript", "ReactJS"],
     description:
       "I have solved many front end challenges on FrontendMentor platform offering various designs for beginner to expert levels. Practiced my CSS and JS skills with utmost accuracy in replicating the design challenge. Do checkout my GitHub for source code and links.",
@@ -133,7 +124,7 @@ export const designProjects = [
   {
     title: "Bliss Cakehouse",
     tech: ["4"],
-    links: ["", ""],
+    links: ["http://bliss-cakehouse.utkarshkore.me/"],
     tools: ["AdobeXD"],
     description:
       "Created a website design for friend's Bakery initiative started in COVID lockdown with one of my colleague. This static website consists of simple products listing and some information about the Cakehouse.",
@@ -141,7 +132,7 @@ export const designProjects = [
   {
     title: "News Daily",
     tech: ["1"],
-    links: ["", ""],
+    links: [""],
     tools: ["AdobeXD"],
     description:
       "A design made for News Daily Android app consisting of engaging screen designs allowing users to quickly and efficiently navigate through the app for interesting news.",

@@ -5,6 +5,10 @@ import {
   flutterIcon,
   iosIcon,
   nodejsIcon,
+  firebaseIcon,
+  reactIcon,
+  mysqlIcon,
+  mongoIcon,
 } from "../../containers/experience/icons";
 
 import classes from "./ProjectItem.module.css";
@@ -16,6 +20,16 @@ const techIcons = [
   nodejsIcon,
   nodejsIcon,
   nodejsIcon,
+];
+
+const toolsIcons = [
+  androidIcon,
+  flutterIcon,
+  nodejsIcon,
+  reactIcon,
+  mysqlIcon,
+  mongoIcon,
+  firebaseIcon,
 ];
 
 const TechIconsContainer = ({ imageSource, url = "" }) => {
@@ -42,8 +56,8 @@ const ProjectItem = ({ project, projectImage }) => {
       <div className={classes["project-image-container"]}>
         <img className={classes["project-image"]} src={projectImage} alt="" />
         <div className={classes["tools-container"]}>
-          {project.tech.map((t, i) => (
-            <ToolsContainer imageSource={techIcons[t - 1]} url="" key={i} />
+          {project.tools.map((_, i) => (
+            <ToolsContainer imageSource={toolsIcons[i]} url="" key={i} />
           ))}
         </div>
       </div>
