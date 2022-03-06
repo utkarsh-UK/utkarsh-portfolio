@@ -22,7 +22,7 @@ export const mobileProjects = [
     tech: ["1", "2", "4"],
     links: [
       "https://play.google.com/store/apps/details?id=com.outshade.sacredgroves",
-      "https://play.google.com/store/apps/details?id=com.outshade.sacredgroves",
+      "https://apps.apple.com/in/app/sacred-groves/id1543864728",
       "https://www.sacredgroves.earth/",
     ],
     tools: [2, 7, 8, 23, 10],
@@ -43,7 +43,7 @@ export const mobileProjects = [
   {
     title: "Fiscal",
     tech: ["3"],
-    links: [""],
+    links: ["https://github.com/utkarsh-UK/fiscal"],
     tools: [2, 22, 24],
     description:
       "A self-developed project with motivation to manage expenses of an individual. It is an application developed in Flutter and only manages data locally keeping all the transactions 'internet proof'. This is still in the prototype phase and not yet fully functional.",
@@ -62,7 +62,7 @@ export const mobileProjects = [
   {
     title: "News Daily",
     tech: ["1"],
-    links: [""],
+    links: ["https://github.com/utkarsh-UK/news-app"],
     tools: [1, 19, 24],
     description:
       "News Daily is an Android application to read news on daily basis using Rapid API's. App has the ability to fetch and display various news based on user preferences.",
@@ -89,7 +89,7 @@ export const webProjects = [
   {
     title: "Cryptoverse",
     tech: ["4"],
-    links: [""],
+    links: ["https://github.com/utkarsh-UK/cryptoverse"],
     tools: [4, 3, 21, 19],
     description:
       "Cryptoverse makes use of Rapid APIs for showcasing information of different crypto currencies available in the market. Built with ReactJS, this project also consumes API that displays news regarding crypto currencies and has the convinience to choose from listed currencies and study them.",
@@ -116,7 +116,10 @@ export const designProjects = [
   {
     title: "Reddoo",
     tech: ["1", "2"],
-    links: ["", ""],
+    links: [
+      "https://play.google.com/store/apps/details?id=in.reddoo.reddoouser",
+      "",
+    ],
     tools: [2, 7, 8, 20, 24],
     description:
       "Transformed ideas and imaginations of Reddoo team into beautiful yet simple UI screens to turn it to a product. Utilized AdobeXD tool for creating the screens and finalizing on the color schemes, icons, etc. Taken inspiration from various available food delivery app to create Reddoo without jeopardising user experience.",
