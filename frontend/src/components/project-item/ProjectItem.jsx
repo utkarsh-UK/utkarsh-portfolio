@@ -66,7 +66,7 @@ const toolsIcons = [
 ];
 
 const TechIconsContainer = ({ imageSource, url = "" }) => {
-  return (
+  return url === "" ? null : (
     <a href={url} target="_blank" rel="noreferrer">
       <div className={classes["tech-container"]}>
         <img src={imageSource} alt="" />
