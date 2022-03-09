@@ -84,7 +84,7 @@ export const webProjects = [
     links: ["http://persuit.utkarshkore.me/"],
     tools: [4, 3, 21],
     description:
-      "Persuit drives it's motivation from Zerodha's Kite Trading platform. Persuit is a practice clone for Kite with exact replica of the UI and design aspects built with ReactJS. Implemented stocks listing, buy/sell window, Holdings and other such important aspects with hard coded data.",
+      "Persuit drives it's motivation from Zerodha's Kite Trading platform. Persuit is a practice clone for Kite with exact replica of the UI and design aspects built with ReactJS. Implemented stocks listing, buy/sell window, Holdings and other such important aspects with hard coded data. Tip - Use ID 'AT1987' and Password 'Test@1234' for login to Persuit.",
   },
   {
     title: "Cryptoverse",
