@@ -6,6 +6,14 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className={classes["portfolio-footer__container"]}>
+        <a
+          target="_blank"
+          href="/resources/resume.pdf"
+          className={classes["portfolio-footer__resume"]}
+        >
+          <button className={classes["view-resume"]}>View My Resume</button>
+        </a>
+
         <hr />
 
         <div className={classes["portfolio-footer__credits"]}>

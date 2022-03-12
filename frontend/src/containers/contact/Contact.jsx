@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Footer } from "../../containers/index";
-import { handleLinkOpen } from "../../helpers/helpers";
 
 import linkedinImage from "../../icons/linkedin-white.png";
 import mailImage from "../../icons/email-white.png";
@@ -11,24 +10,23 @@ import classes from "./Contact.module.css";
 
 const SocialIconsContainer = ({ imageSource, url = "" }) => {
   return (
-    <div
-      className={classes["icon-container"]}
-      onClick={() => handleLinkOpen(url)}
-    >
+    <div className={classes["icon-container"]}>
       <img src={imageSource} alt="" />
     </div>
   );
 };
 
-const ContactTile = ({ icon, content }) => {
+const ContactTile = ({ icon, content, url }) => {
   return (
     <div className={classes["portfolio-contact__tile-container"]}>
       <hr />
 
       <div className={classes["portfolio-contact__tile-wrapper"]}>
-        <SocialIconsContainer imageSource={icon} />
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <SocialIconsContainer imageSource={icon} />
 
-        <p> {content} </p>
+          <p> {content} </p>
+        </a>
       </div>
     </div>
   );
@@ -40,6 +38,12 @@ const Contact = () => {
     "utkarshkore98@gmail.com",
     "Utkarsh Kore",
     "@utkarshkore",
+    
+  ];
+  const contactLinks = [
+    "",
+    "https://www.linkedin.com/in/utkarsh-kore-175080174/",
+    "https://medium.com/@utkarshkore",
   ];
 
   return (
@@ -73,6 +77,7 @@ const Contact = () => {
               key={i}
               icon={conactListIcons[i]}
               content={conactAccounts[i]}
+              url={contactLinks[i]}
             />
           ))}
         </div>

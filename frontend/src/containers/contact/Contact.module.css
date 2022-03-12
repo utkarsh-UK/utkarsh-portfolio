@@ -3,7 +3,7 @@
   display: flex;
   position: relative;
 
-  padding: 10rem 2.5rem;
+  padding: 10rem 2.5rem 6rem;
   box-sizing: border-box;
 }
 
@@ -82,6 +82,18 @@
   justify-content: flex-start;
 
   padding: 1rem 0 0 1rem;
+  cursor: pointer;
+}
+
+.portfolio-contact__tile-wrapper a {
+  text-decoration: none;
+  color: var(--font-primary);
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .portfolio-contact__tile-wrapper p {
@@ -101,7 +113,6 @@
   justify-content: center;
 
   background: var(--color-secondary);
-  cursor: pointer;
 }
 
 .icon-container img {
