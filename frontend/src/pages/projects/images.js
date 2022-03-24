@@ -1,6 +1,7 @@
 export {default as sacredProject } from '../../images/sacred.jpg';
 export {default as reddooProject } from '../../images/reddoo.png';
 export {default as fiscalProject } from '../../images/fiscal.png';
+export {default as todoProject } from '../../images/todo.png';
 export {default as dojoProject } from '../../images/dojo.png';
 export {default as newsAppProject } from '../../images/news-app.png';
 export {default as annadataProject } from '../../images/annadata-mockup.png';

@@ -60,6 +60,14 @@ export const mobileProjects = [
       "DOJO allows 10M+ people to discover the best studios, personal trainers and fitness activities into one app. Interned as an Android Developer to build and manage Adminitrative application for DOJO team. Application allows team to manage events of classes, onboard them and other administrative tasks.",
   },
   {
+    title: "TODO",
+    tech: ["3"],
+    links: ["https://github.com/utkarsh-UK/task-app"],
+    tools: [2, 22, 24],
+    description:
+      "A flutter built application to manage personal tasks and keep track of work for building oranizational habits. Application uses GetX as a state management solution having intuitive UI and faster response.",
+  },
+  {
     title: "News Daily",
     tech: ["1"],
     links: ["https://github.com/utkarsh-UK/news-app"],

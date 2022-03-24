@@ -15,6 +15,7 @@ import {
   cryptoProject,
   dojoProject,
   fiscalProject,
+  todoProject,
   flutterWorkshopProject,
   frontendMentorProject,
   newsAppProject,
@@ -34,6 +35,7 @@ const mobileProjectImages = [
   reddooProject,
   fiscalProject,
   dojoProject,
+  todoProject,
   newsAppProject,
 ];
 
